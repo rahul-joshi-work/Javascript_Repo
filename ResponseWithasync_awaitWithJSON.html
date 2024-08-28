@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async_await_with_JSON</title>
+</head>
+<body style="background-color: black; color: white;">
+    <h2>async_await_with_JSON</h2>
+</body>
+  <script>
+
+    // async function oneuser()
+    // {
+    //     try
+    //     {
+    //        let response = await fetch('https://jsonplaceholder.org/posts/1');
+    //        console.log(response);
+    //        let data = response.json();                   
+    //        console.log(data);
+    //     }
+    //     catch(error)
+    //     {
+    //        console.log(error);
+    //     }
+    // }
+    // oneuser();
+
+
+
+    // async function twouser()
+    // {
+    //     try
+    //     {
+    //         let response = await fetch("https://jsonplaceholder.org/users")
+    //         let data =  await response.json();
+    //         console.log(data[5]);
+    //     }
+    //     catch(error)
+    //     {
+    //         console.log(error)
+    //     }
+    // }
+    // twouser()
+
+
+
+    // async function threeuser()
+    // {
+    //     try
+    //     {
+    //         let responce = await fetch("https://jsonplaceholder.org/users");
+    //         let data = await responce.json();
+    //         console.log(data);
+    //     }
+    //     catch(error)
+    //     {
+    //         console.log(error);
+    //     }
+    // }
+    // threeuser();
+
+
+    // async function fouruser()
+    // {
+    //     try
+    //     {
+    //         let responce = await fetch('https://jsonplaceholder.org/users');
+    //         let data = responce.json();
+    //         console.log(data);
+    //     }
+    //     catch(error)
+    //     {
+    //         console.log(error);
+    //     }
+    // }
+    // fouruser();
+
+
+    
+    
+    // async function fiveuser()
+    // {
+    //     try
+    //     {
+    //         let response = await fetch('https://jsonplaceholder.org/users');
+    //         let data = await response.json();
+    //         console.log(data);
+    //     }
+    //     catch(error)
+    //     {
+    //         console.log(error);
+    //     }
+    // }
+    // fiveuser();
+
+
+
+    
+    
+    // async function sixuser()
+    // {
+    //     try
+    //     {
+    //         let response = await fetch('https://jsonplaceholder.org/users');
+    //         let data = await response.json();
+    //         console.log(Object.values(data));
+    //         console.log(Object.values(data[10]));
+    //     }
+    //     catch(error)
+    //     {
+    //        console.log(error);
+    //     }
+    // }
+    // sixuser();
+
+
+
+// fetch('https://jsonplaceholder.org/users')
+// .then(function(response)
+// {
+//     return response.json();
+
+// })
+// .then(function(data)
+// {
+//     console.log(data);
+//     console.log(Object.values(data[1]));
+// })
+// .catch(function(error)
+// {
+//     console.log(error);
+// })
+
+
+
+
+
+// fetch('https://jsonplaceholder.org/users')
+// .then((response) => {
+   
+//     return response.json();
+// })
+// .then((data) => {
+    
+//     console.log(data);
+//     console.log(data[0]);
+//     console.log(data[11]);
+// })
+// .catch((error) => {
+    
+//     console.log(error);
+// })
+
+
+
+async function sevenuser()
+{
+    try
+    {
+        let response = await fetch('https://jsonplaceholder.org/users');
+        let data = await response.json();
+        console.log(data);
+        console.log(Object.values(data[11]));
+    }
+    catch(error)
+    {
+        console.log(error);
+    }
+}
+sevenuser();
+
+
+
+
+// fetch('https://jsonplaceholder.org/users')
+// .then(function(response)
+// {       
+//     return response.json();
+
+// }).then(function(data)
+// {
+//     console.log(data);
+//     console.log(Object.values(data[10]));
+
+// }).catch(function(error)
+// {
+//     console.log(error);
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API_Request</title>
+    <style>
+      #Allresponse, img{
+        height: 200px;
+        width: 200px;
+        border: 2px solid red;
+      }
+    </style>    
+</head>
+<body style="background-color: rgb(44, 36, 36); color:white;">
+  <h1>API_Request</h1>
+   <div>
+       <button id="messagebtn">ShowMessage</button>
+      <p id="showthemessage"></p>
+   </div>
+</body>  
+<script>
+    
+
+
+    // First-Request.
+    // city is calling with this APIs
+    let GETresponce = "https://jsonplaceholder.typicode.com/users"
+    let xhr = new XMLHttpRequest();
+    let getresponce;    
+    let showthemessage = document.getElementById('showthemessage');
+    xhr.open("GET",GETresponce);   
+    xhr.onreadystatechange = function(){
+          
+          if(xhr.readyState === 4)
+          {
+             getresponce = JSON.parse(this.responseText);     
+          }
+    }    
+    xhr.send();
+
+
+
+    // Second-Request. 
+    // comment is calling this APIs.
+    let GETresponse2 = "https://jsonplaceholder.typicode.com/comments";
+    let xhr2 = new XMLHttpRequest();
+    let getresponse2;
+    xhr2.open("GET",GETresponse2);    
+    xhr2.onreadystatechange = function(){
+
+          if(xhr2.readyState === 4)
+          {
+            getresponse2 = JSON.parse(this.responseText);             
+          }    
+    }
+    xhr2.send();   
+
+
+
+    // Third-Request.
+    // Image is calling with this apis.
+    let getresponse3;
+    let GETresponse3 = "https://jsonplaceholder.typicode.com/photos";
+    let xhr3 = new XMLHttpRequest();
+    xhr3.open("GET",GETresponse3);
+    xhr3.onreadystatechange = function(){
+
+          if(xhr3.readyState === 4)
+          {
+             getresponse3 = JSON.parse(this.responseText);                                    
+          }    
+    };        
+    xhr3.send();    
+    
+
+   //messagebtn is fired
+   document.getElementById('messagebtn').addEventListener('click',function(event){
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        console.log("City : " + getresponce[0].address.city);
+        console.log(getresponse2[0].body);
+        console.log(getresponse3[1].url);
+        
+        showthemessage.innerHTML = `
+          
+              <div id="Allresponse">
+                <img src="${getresponse3[1].url}"></br>
+                <span>City : ${getresponce[0].address.city}</span></br>
+                </br><span>Comment : ${getresponse2[0].body} </span>
+              </div>
+        `;
+
+    },false);     
+
+</script>
+</html>

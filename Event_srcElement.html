@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event_srcElement</title>
+</head>
+<body>
+  <h3 id="srcElement">event_srcElement</h3>  
+</body>
+ <script>
+    
+    let srcElement = document.getElementById('srcElement');
+    srcElement.addEventListener('click',function(event){
+
+        srcElement = event.target;
+        console.log(srcElement);
+
+    },false);
+    
+ </script>
+</html>

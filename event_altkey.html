@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>altkey_event</title>
+</head>
+<body>
+  <h2 id="altkey">altkey event</h2> 
+</body>
+ <script>
+    
+    let altkey = document.getElementById('altkey');
+    document.addEventListener('keydown',function(event){
+
+        if(event.altKey)
+        {            
+          altkey.innerHTML = `altkey is press`;
+          console.log("altkey is press");
+        }
+        else
+        {
+          console.log("not pressed");
+          altkey.innerHTML = `not pressed`;
+        }
+
+    },false);
+        
+
+ </script>
+</html>

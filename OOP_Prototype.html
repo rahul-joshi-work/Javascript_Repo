@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP_With_Prototype</title>
+</head>
+ <style>
+    body{
+        background-color: black;
+        color: white;
+    }
+ </style>
+<body>
+  <h2>OOP_With_Prototype</h2>
+</body>
+ <script>
+    // function multipleBy5(num)
+    // {
+    //     return num*2;
+    // }
+    // multipleBy5.power = 2;
+    // console.log("multipleBy5(2) = " + multipleBy5(2));
+    // console.log(multipleBy5.prototype);
+
+
+    function createUser(username,score)
+    {
+        this.OneUsername = username;
+        this.SecondScore = score;
+    }
+
+    createUser.prototype.increment = function()
+    {
+        this.SecondScore++;   
+    }
+
+    createUser.prototype.printme = function()
+    {
+        console.log("price is = " + this.SecondScore);
+    }
+
+    let chai =  createUser("chai",25);
+    let tea  =  createUser("tea",250);
+
+    chai.printme();
+    tea.printme();
+
+ </script>
+</html>

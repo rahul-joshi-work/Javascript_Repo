@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project_6</title>
+</head>
+ <style>
+    #center{
+        text-align: center;
+        padding: 50px 50px;
+    }
+    #start,
+    #stop{
+        padding: 25px;
+        font-size: 20px;
+        font-weight: bold;        
+        border-width: 0;
+    }
+    #start:hover,
+    #stop:hover{
+        background-color: black;
+        color: white;
+        border: 2px solid red;  
+        border-width: 0;      
+    }
+ </style>
+<body>
+ <div id="center">
+  <h2>Project_6</h2>
+   <h2>Change Background Color and its Name : <span id="colorsname"></span></h2>
+    <button id="start">start</button>&nbsp; &nbsp;<button id="stop">stop</button></br>
+ </div>
+</body>
+ <script>
+  
+let changecolor;
+let color;
+let colorname;
+
+function RandomColor()
+{
+    color = '#';
+    let hex = '0123456789ABCDEF';
+    for(let a = 0; a < 6; a++)
+    {      
+       color = color + hex[Math.floor(Math.random() * 16 )];
+    }
+
+    colorname = document.getElementById('colorsname').innerHTML = color;        
+    console.log(colorname);        
+    return color;    
+}
+
+
+function ChangeColors()
+{
+    console.log("change color = " + changecolor);
+
+    if(changecolor == null)
+    {
+        changecolor = setInterval(function()
+        {
+            document.body.style.backgroundColor = RandomColor();
+            console.log('null is fire');               
+        
+        },1000);
+        console.log("start");
+    }
+}
+                
+function StopColor()
+{
+    clearInterval(changecolor);
+    changecolor = null;
+    console.log("stop");
+    console.log("stop color1 = " + changecolor);
+}
+
+document.getElementById('start').addEventListener('click',ChangeColors);
+document.getElementById('stop').addEventListener('click',StopColor);  
+
+
+
+ </script>
+</html>

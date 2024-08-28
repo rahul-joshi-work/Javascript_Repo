@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getter_Setter</title>
+</head>
+ <style>
+    body{
+        background-color: black;
+        color: white;
+    }
+ </style>
+<body>
+  <h2>Getter_Setter_Methods</h2>
+</body>
+ <script>
+
+    // this is an class with constructor and getter / setter methods. 
+
+    //  1
+    // class User 
+    // {
+    //     constructor(username,password)
+    //     {
+    //         this.usernameone = username;
+    //         this.passwordone = password;
+    //     }
+    //     // username with setter & getter
+    //     get usernameone()
+    //     {
+    //        return this._usernameone.toUpperCase();
+    //     }        
+    //     set usernameone(value)
+    //     {
+    //        this._usernameone = value;
+    //     }
+    //     // passwordone with setter & getter
+    //     get passwordone()
+    //     {
+    //         return this._passwordone;
+    //     }
+    //     set passwordone(value)
+    //     {
+    //       this._passwordone = value;   
+    //     }
+    // }    
+    // let user = new User("Tina","Tina123");    
+    // console.log(user);
+    // console.log(user._usernameone);
+    // console.log(user._passwordone);
+
+
+    //  2
+    // class User2
+    // {
+    //     constructor(username,password)
+    //     {
+    //         this.userone = username;
+    //         this.passone = password;
+    //     }
+    //     get userone()
+    //     {
+    //        return this._userone.toUpperCase();
+    //     }
+    //     set userone(uservalue)
+    //     {
+    //        this._userone = uservalue;
+    //     }
+    //     get passone()
+    //     {
+    //         return this._passone;
+    //     }
+    //     set passone(passvalue)
+    //     {
+    //         this._passone = passvalue;
+    //     }
+    // }
+    // let user2 = new User2("RITA","rita123");
+    // console.log(user2);
+    // console.log(user2.userone);
+    // console.log(user2.passone);
+    
+    
+    
+    // 3
+    // class User3 
+    // {
+    //     constructor(username)
+    //     {
+    //         this.usernameone = username;            
+    //     }
+    //     get usernameone()
+    //     {
+    //         return this._usernameone.toUpperCase();            
+    //     }
+    //     set usernameone(usernamevalue)
+    //     {
+    //         this._usernameone = usernamevalue;          
+    //     }
+    // }
+    // let user3 = new User3("nigger");
+    // console.log(user3);
+    // console.log("usernameone = " + user3.usernameone);
+    // console.log("_usenameone = " + user3._usernameone);
+
+
+    // 4
+    // class User4
+    // {
+    //     constructor(username)
+    //     {
+    //        this.usernameone = username;
+    //     }
+    //     get usernameone()
+    //     {
+    //         return this._usernameone;
+    //     }
+    //     set usernameone(usernamevalue)
+    //     {
+    //         this._usernameone = usernamevalue;
+    //     }
+    // }
+    // setInterval(UserTime,3000);
+    // function UserTime()
+    // {
+    //     let  user4 = new User4("rina");
+    //     console.log("_usernameone = " + user4._usernameone);
+    //     console.log("usernameone = " + user4.usernameone);
+    // }
+
+
+    // 5
+    // class User5
+    // {
+    //    constructor(username)
+    //    {
+    //       this.usernameone = username;
+    //       console.log("constructor usernameone  = " + this.usernameone);
+    //    }
+    //    get usernameone()
+    //    {         
+    //       return this._usernameone.toUpperCase();          
+    //    }
+    //    set usernameone(value)
+    //    {
+    //       this._usernameone = value.toLowerCase();
+    //    } 
+    // }
+    // let user5 = new User5("rahul-parmar");
+    // console.log(user5);
+    // console.log(user5.usernameone);
+    // console.log(user5._usernameone);
+
+
+    // 6
+    // class User6
+    // {
+    //     constructor(username)
+    //     {
+    //       this.usernameone = username;
+    //     }
+    //     get usernameone()
+    //     {
+    //       return `${this._usernameone}abc`;
+    //     }
+    //     set usernameone(value)
+    //     {
+    //       `${this._usernameone = value}`;
+    //     }
+    // }
+    // let user6 = new User6("mahatma_gandhi");
+    // console.log("user6.usernameone = " + user6.usernameone);
+    // console.log("user6._usernameone = " + user6._usernameone);
+
+
+    // 7
+    // class User7
+    // {
+    //   constructor(username,password)
+    //   {
+    //       this.usernameone = username;
+    //       this.passone = password;
+    //   }
+    //   get usernameone()
+    //   {
+    //       return this._usernameone.toUpperCase();
+    //   }
+    //   set usernameone(value)
+    //   {
+    //      this._usernameone = value;
+    //   }      
+    //   get passone()
+    //   {
+    //      return this._passone;
+    //   }
+    //   set passone(pass)
+    //   {
+    //       this._passone = pass;
+    //   }
+    // }
+    // let user7 = new User7("Tivari","tivari123");
+    // console.log(user7);
+    // console.log("usernameone = " + user7.usernameone);
+    // console.log("_usenameone = " + user7._usernameone);
+    // console.log("passone = " + user7.passone);
+    // console.log("_passone = " + user7._passone);
+
+
+
+    // class User8
+    // {
+    //   constructor(username,email)
+    //   {
+    //      this.usernameone = username;
+    //      this.emailone = email;
+    //   }
+    //   get usernameone()
+    //   {
+    //      return this._usernameone.toUpperCase();
+    //   }
+    //   set usernameone(uservalue)
+    //   {
+    //      this._usernameone = uservalue;   
+    //   }
+    //   get emailone()
+    //   {
+    //      return this._emailone.toUpperCase();
+    //   }
+    //   set emailone(emailvalue)
+    //   {
+    //       this._emailone = emailvalue;
+    //   }
+    // }
+    // let user8 = new User8("Jivan","Jivan123@gmail.com");
+    // console.log("user8.usernameone = " + user8.usernameone);
+    // console.log("user8._usernameone = " + user8._usernameone);
+    // console.log("user8.emailone = " + user8.emailone);
+    // console.log("user8._emailone = " + user8._emailone);
+
+
+    // 9 
+    // class User9
+    // {
+    //   constructor(username,email)
+    //   {
+    //       this.usernameone = username;
+    //       this.emailone = email;
+    //   }
+    //   get usernameone()
+    //   {
+    //      return this._usernameone.toUpperCase();
+    //   }
+    //   set usernameone(useronevalue)
+    //   {
+    //      this._usernameone = useronevalue;
+    //   }
+    //   get emailone()
+    //   {
+    //       return this._emailone.toUpperCase();
+    //   }
+    //   set emailone(emailonevalue)
+    //   {
+    //       this._emailone = emailonevalue;
+    //   }
+    // }
+
+    // let user9 = new User9("yogirabalam","yogita@gmail.com");
+    // console.log("user9._usernameone = " + user9._usernameone);
+    // console.log("user9._emailone = " + user9._emailone);
+    // console.log("user9.usernameone = " + user9.usernameone);
+    // console.log("user9.emailone = " + user9.emailone);
+
+
+    // 10
+    // class User10
+    // {
+    //   constructor(username,password,email,location)
+    //   {
+    //     this.usernameone = username;
+    //     this.passwordone = password;
+    //     this.emailone = email;
+    //     this.locationone = location;
+    //   }
+    //   get usernameone()
+    //   {
+    //      return this._usernameone.toUpperCase();      
+    //   }
+    //   set usernameone(useronevalue)
+    //   {
+    //      this._usernameone = useronevalue;
+    //   }
+    //   get passwordone()
+    //   {
+    //       return this._passwordone.toUpperCase();
+    //   }
+    //   set passwordone(passwordvalue)
+    //   {
+    //       this._passwordone = passwordvalue;
+    //   }
+    //   get emailone()
+    //   {
+    //       return this._emailone.toUpperCase();
+    //   }
+    //   set emailone(emailvalue)
+    //   {
+    //      this._emailone = emailvalue;
+    //   }
+    //   get locationone()
+    //   {
+    //       return this._locationone.toUpperCase();
+    //   }
+    //   set locationone(locationvalue)
+    //   {
+    //      this._locationone = locationvalue;
+    //   }
+    // }
+    // let user10 = new User10("bina","bina123","bina@gmail.com","mumbai");
+    // console.log("user10.usernameone = " + user10.usernameone);
+    // console.log("user10._usernameone = " + user10._usernameone);
+    // console.log("user10.passwordone = " + user10.passwordone);
+    // console.log("user10._passwordone = " + user10._passwordone);
+    // console.log("user10.emailone = " + user10.emailone);
+    // console.log("user10._emailone = " + user10._emailone);
+    // console.log("user10.locationone = " + user10.locationone);
+    // console.log("user10._locationone = " + user10._locationone);
+
+//================================================================================================
+
+
+// function User1(username,password)
+// {
+//   this._usernameone = username;
+//   this._passwordone = password;
+  
+//     Object.defineProperty(this,'usernameone',
+//     {
+//         get: function()
+//         {
+//           return this._usernameone.toUpperCase();
+//         },    
+//         set: function(uservalue)
+//         {
+//           this._usernameone = uservalue;
+//         }  
+//     }),
+
+//     Object.defineProperty(this,'passwordone',
+//     {
+//         get: function()
+//         {
+//           return this._passwordone.toUpperCase();
+//         },
+//         set: function(passwordvale)
+//         {
+//           this._passwordone = passwordvale; 
+//         }
+//     });
+
+// }
+
+//  let user1 = new User1("gauravjani","gaurav123");
+//  let user2 = new User1("gauravjani","gaurav123");
+//  console.log(user2);
+//  console.log("usernameone = " + user2.usernameone);
+//  console.log("passwordone = " + user2.passwordone);
+//  console.log("_usernameone = " + user2._usernameone);
+//  console.log("_passwordone = " + user2._passwordone);
+ 
+
+// function User2(username,password)
+// {
+//     this._usernameone = username;
+//     this._passwordone = password;
+
+//     Object.defineProperty(this,'usernameone',
+//     {
+//         get: function()
+//         {
+//            return this._usernameone.toUpperCase();
+//         },
+//         set: function(uservalue)
+//         {
+//            this._usernameone = uservalue;
+//         }
+//     }),
+    
+//     Object.defineProperty(this,'passwordone',
+//     {
+//         get: function()
+//         {
+//            return this._passwordone.toUpperCase();
+//         },
+
+//         set: function(password)
+//         {
+//            this._passwordone = password;
+//         }
+//     })
+// }
+
+// let user2 = new User2("Fazila","Fazila123");
+// console.log(user2);
+// console.log(user2._usernameone);
+// console.log(user2._passwordone);
+// console.log(user2.usernameone);
+// console.log(user2.passwordone);
+
+
+// function User3(username,password)
+// {
+//     this._usernameone = username;
+//     this._passwordone = password;
+
+//     Object.defineProperty(this,'usernameone',
+//     {
+//         get: function()
+//         {
+//            return this._usernameone.toLowerCase();
+//         },
+//         set: function(userval)
+//         {
+//            this._usernameone = userval;
+//         }      
+//     }),
+    
+//     Object.defineProperty(this,'passwordone',
+//     {
+//         get: function()
+//         {
+//           return this._passwordone.toLowerCase();
+//         },
+
+//         set: function(passval)
+//         {
+//           this._passwordone = passval;
+//         }
+//     })
+// }
+
+// let user3 = new User3("URAVASHI","URAVASHI@GAMIL.COM");
+// console.log("_usernameone = " + user3._usernameone);
+// console.log("_passwordone = " + user3._passwordone);
+// console.log("usernameone = " +  user3.usernameone);
+// console.log("passwordone = "  + user3.passwordone);
+
+
+// class User100
+// {
+//     constructor(username)
+//     {
+//         this.usernameone = username;
+//     }
+//     get usernameone()
+//     {
+//        return this._usernameone.toLowerCase();
+//     }
+//     set usernameone(uservalue)
+//     {
+//        this._usernameone = uservalue;
+//     }
+// }
+
+//   let user100 = new User100("RAVINA");
+//   console.log("user100.usernameone = " + user100.usernameone);
+//   console.log("user100._usernameone = " + user100._usernameone);
+
+
+
+// function User4(username,password)
+// {
+//     this._usernameone = username;
+//     this._passwordone = password;
+
+//     Object.defineProperty(this,'usernameone',{
+
+//           get: function()
+//           {
+//              return this._usernameone.toLowerCase();
+//           },                    
+          
+//           set: function(uservalue)
+//           {
+//              this._usernameone = uservalue;       
+//           }
+//     })
+    
+//     Object.defineProperty(this,'passwordone',{
+
+//           get: function()
+//           {
+//              return this._passwordone.toLowerCase();
+//           },
+          
+//           set: function(password)
+//           {
+//               this._passwordone = password;  
+//           }
+//     })
+
+// }
+// let user4 = new User4("TINA-MUNIM","TINAMUNIM@GMAIL.COM");
+// console.log(user4);
+// console.log("user4.usernameone = " +  user4.usernameone);
+// console.log("user4.passwordone = " +  user4.passwordone);
+// console.log("user4._usernameone = " + user4._usernameone);
+// console.log("user4._passwordone = " + user4._passwordone);
+ 
+
+
+// function User5(username,password)
+// {
+//     this._usernameone = username;
+//     this._passwordone = password;
+
+//     Object.defineProperty(this,'usernameone',
+//     {        
+//         get:function()
+//         {
+//             return this._usernameone.toUpperCase();
+//         },        
+        
+//         set:function(value)
+//         {
+//             this._usernameone = value;
+//         }
+//     }),
+
+//     Object.defineProperty(this,'passwordone',{
+        
+//         get:function()
+//         {
+//             return this._passwordone.toUpperCase();
+//         },
+//         set:function(passvalue)
+//         {
+//             this._passwordone = passvalue;
+//         }    
+//     })
+// }
+  
+// let user4 = new User5("rahulpandya","rahul12345");
+//  console.log(user4._usernameone);
+//  console.log(user4._passwordone);
+  
+
+
+// function User6(username,password,email)
+// {
+//     this._usernameone = username;
+//     this._passwordone = password;
+//     this._emailone = email;
+
+//     Object.defineProperty(this,'usernameone',{
+
+//         get:function()
+//         {
+//             return this._usernameone.toUpperCase();
+//         },
+//         set:function(uservalue)
+//         {
+//             this._usernameone = uservalue;
+//         }
+//     }),
+    
+//     Object.defineProperty(this,'passwordone',{
+
+//         get:function()
+//         {
+//             return this._passwordone.toUpperCase();
+//         },
+//         set:function(passvalue)
+//         {
+//             this._passwordone = passvalue;
+//         },
+//     }),
+
+//     Object.defineProperty(this,'emailone',{
+
+//         get:function()
+//         {
+//             return this._emailone.toUpperCase();
+//         },
+        
+//         set:function(emailvalue)
+//         {
+//             this._emailone = emailvalue;
+//         } 
+//     })
+// }
+
+// let user6 = new User6('kirtan','kirtan123','kirtan@gmail.com');
+// console.log(user6);
+// console.log(user6._usernameone);
+// console.log(user6._passwordone);
+// console.log(user6._emailone);
+// console.log("user6.usernameone = " + user6.usernameone);
+// console.log("user6.emailone = " + user6.emailone);
+// console.log("user6.passwordone = " + user6.passwordone);
+
+
+
+// function User7(firstname,lastname,salary,hiredate,region)
+// {
+//     this._firstnameone = firstname;
+//     this._lastnameone = lastname;
+//     this._salaryone = salary;
+//     this._hiredateone = hiredate;
+//     this._regiONE = region;
+    
+     
+//     Object.defineProperty(this,'firstnameone',{
+
+//         get:function()
+//         {
+//             return this._firstnameone = firstname.toUpperCase();
+//         }, 
+//         set:function(firstnamevalue)
+//         {
+//             this._firstnameone = firstnamevalue;   
+//         }
+//     }),
+
+
+//     Object.defineProperty(this,'lastnameone',{
+
+//         get: function(){
+//             return this._lastnameone.toUpperCase();
+//         },
+//         set: function(lastnamevalue){
+//             this._lastnameone = lastnamevalue;
+//         },
+//     }),
+
+
+//     Object.defineProperty(this,'salaryone',{
+
+//         get: function(){
+//             return this._salaryone;
+//         },
+//         set: function(salaryvalue){
+//             this._salaryone = salaryvalue;
+//         },
+         
+//     })
+
+
+//     Object.defineProperty(this,'hiredateone',{
+
+//         get: function(){
+//             return this._hiredateone.toUpperCase();
+//         },
+//         set: function(hiredatevalue){
+//             this._hiredateone = hiredatevalue;
+//         },
+//     }),
+
+
+//     Object.defineProperty(this,'regiONE',{
+              
+//         get: function(){
+//             return this._regiONE.toUpperCase();
+//         },
+//         set: function(regionvalue){
+//              this._regiONE = regionvalue.toUpperCase();  
+//         }
+//     })
+    
+// }
+
+// let user7 = new User7("radha","krishna",12300,Date(),"Parvana");
+// console.log("user7.firstname = " + user7.firstname);
+// console.log("user7.lastname = " + user7.lastname);
+// console.log("user7.salary = " + user7.salary);
+// console.log("user7.hiredate = " + user7.hiredate); 
+// console.log("user7.region = " + user7.regiONE);
+// console.log("user7.firstname = " + user7._firstnameone);
+// console.log("user7.lastname = " + user7._lastnameone);
+// console.log("user7.salary = " + user7._salaryone);
+// console.log("user7.hiredate = " + user7._hiredateone);
+// console.log("user7.region = " + user7._regiONE);
+
+
+
+
+// function User8(username,password)
+// {
+//    this._usernameone = username;
+//    this._passwordone = password;
+
+//    Object.defineProperty(this,'usernameone',{
+        
+//        get:function()
+//        {
+//            return this._usernameone.toUpperCase();
+//        },
+//        set:function(usernamevalue)
+//        {    
+//            this._usernameone = usernamevalue;
+//        },
+//    }),
+
+//    Object.defineProperty(this,'passwordone',{
+
+//        get:function()
+//        {
+//             return this_passwordone.toUpperCase();
+//        },
+//        set:function(passwordvalue)
+//        {
+//             this._passwordone = passwordvalue;
+//        }
+//    })
+// }
+ 
+// let user8 = new User8("karuna","karuna123");
+// console.log(user8._usernameone);
+// console.log(user8._passwordone);
+// console.log(user8);
+
+
+
+
+// function User9(username,password,hiredate,salary)
+// {
+//     this._usernameone = username;
+//     this._passwordone = password;
+//     this._hiredateone = hiredate;
+//     this._salaryone = salary;
+
+     
+//     Object.defineProperty(this,'usernameone',{
+//         get:function(){
+//             return this._usernameone.toUpperCase();
+//         },
+//         set:function(uservalue){
+//             this._usernameone = uservalue;
+//         },
+//     }),
+//     Object.defineProperty(this,'passwordone',{
+        
+//         get:function(){
+//             return this._passwordone.toUpperCase();
+//         },
+//         set:function(passwordvalue){
+//             this._passwordone = passwordvalue;
+//         },
+//     })
+//     Object.defineProperty(this,'hiredateone',{
+//         get:function(){
+//             return this._hiredateone.toUpperCase();
+//         },
+//         set:function(hiredatevalue){
+//             this._hiredateone = hiredatevalue;
+//         },
+//     }),
+//     Object.defineProperty(this,'salaryone',{
+//         get:function(){
+//             return this._salaryone;
+//         },
+//         set:function(salaryvalue){
+//             this._salaryone = salaryvalue;
+//         }
+//     })   
+// }
+
+//     let user9 = new User9("tiwari","tiwari123",Date(),10400);
+//     console.log(user9.usernameone);
+//     console.log(user9.passwordone);
+//     console.log(user9.salaryone);
+//     console.log(user9.hiredateone);
+//     console.log(user9._usernameone);
+//     console.log(user9._passwordone);
+//     console.log(user9._salaryone);
+//     console.log(user9._hiredateone);
+
+
+
+// function User10(firstname,lastname,salary,hiredate)
+// {
+//     this._firstnameone = firstname;
+//     this._lastnameone = lastname;
+//     this._salaryone = salary;
+//     this._hiredateone = hiredate
+
+//     Object.defineProperty(this,'firstnameone',{
+//             get:function(){
+//                 return this._firstnameone.toUpperCase();
+//             },
+//             set:function(firstnamevalue){
+//                 this._firstnameone = firstnamevalue;
+//             }
+//     }),
+//     Object.defineProperty(this,'lastnameone',{
+//             get:function(){
+//                 return this._lastnameone.toUpperCase();
+//             },
+//             set:function(lastnamevalue){
+//                 this._lastnameone = lastnamevalue
+//             }
+//     }),
+//     Object.defineProperty(this,'salaryone',{
+//             get:function(){
+//                 return this._salaryone;
+//             },
+//             set:function(salaryvalue){   
+//                 this._salaryone = salaryvalue;
+//             }
+//     }),
+//     Object.defineProperty(this,'hiredateone',{
+//             get:function(){
+//                 return this._hiredateone.toUpperCase() 
+//             },
+//             set:function(hiredatevalue){
+//                 this._hiredateone = hiredatevalue;
+//             }
+//     })
+// }
+
+// let user10 = new User10("yogesh","kumar",10944,Date());
+// console.log(user10.firstnameone);
+// console.log(user10.lastnameone);
+// console.log(user10.salaryone);
+// console.log(user10.hiredateone);
+
+
+
+
+// class User108
+// {
+//   constructor(username)
+//   {
+//     this.usernameone = username;
+//   }
+//   get usernameone()
+//   {
+//      return this._usernameone.toUpperCase();
+//   }
+//   set usernameone(usernamevalue)
+//   {
+//     this._usernameone = usernamevalue;
+//   }
+// }
+// let user108 = new User108("tiranga");
+// console.log(user108.usernameone);
+// console.log(user108._usernameone);
+
+
+
+
+// function User109(username)
+// {
+//    this._usernameone = username;
+
+//    Object.defineProperty(this,'usernameone',{
+
+//       get:function()
+//       {
+//         this._usernameone = username.toUpperCase();
+//       },
+//       set:function(usernamevalue)
+//       {
+//         this._usernameone = usernamevalue;
+//       }
+//    })    
+// }
+
+// let user109 = new User109("tiwari");
+// console.log(user109._usernameone);
+
+
+
+// let User01 = {
+
+//   _username: "krishna",
+//   _password: "krishna123",
+
+//     get username()
+//     {
+//       this._username.toLowerCase();
+//     },
+//     set username(usernamevalue)
+//     {
+//        this._username = usernamevalue;  
+//     },
+    
+//     get password()
+//     {
+//         return this._password.toLowerCase();
+//     },
+//     set password(passwordvalue)
+//     {
+//         this._password = passwordvalue;
+//     }    
+// }
+// let user01 = Object.create(User01);
+// console.log(user01._username);
+// console.log(user01._password);
+
+
+
+
+// let User02 = {
+
+//       _username: "GARUDA",
+//       _password: "GARUDA123",
+
+//       get username()
+//       {
+//           return this._username.toLowerCase();
+//       },
+//       set username(usernamevalue)
+//       {
+//           this._username = usernamevalue;
+//       },
+      
+//       get password()
+//       {
+//           return this._password.toLowerCase();
+//       },
+//       set password(passwordvalue)
+//       {
+//          this._password = passwordvalue;    
+//       }
+// }
+
+// let user02 = Object.create(User02);
+// console.log(user02._username);
+// console.log(user02._password);
+// console.log(user02.username);
+// console.log(user02.password);
+
+
+
+// let User03 = {
+
+//   _username: "trahi",
+//   _password: "trahi123",
+
+//   // username getter() and setter() methods
+//   get username()
+//   {
+//       return this._username.toUpperCase();      
+//   },
+//   set username(usernamevalue)
+//   {
+//       this._username = usernamevalue;
+//   },
+
+//   // password getter() and setter() methods
+//   get password()
+//   {
+//      this._password.toUpperCase();    
+//   },
+//   set password(passwordvalue)
+//   {
+//      this._password = passwordvalue.toUpperCase();
+//   }
+// }
+
+// let user03 = Object.create(User03);
+// console.log(user03._username);
+// console.log(user03._password);
+// console.log(user03.username);
+// console.log(user03.password); 
+
+
+
+// let User04 = {
+  
+//   _username: "yung-thug",
+//   _password: "yung1234",
+//   _email: "yung@gmail.com",
+
+//       get username()
+//       {
+//          return this._username.toUpperCase();
+//       },
+//       set username(usernamevalue)
+//       {
+//          this._username = usernamevalue;    
+//       },      
+      
+      
+//       get()
+//       {
+//          return this._password.toUpperCase();
+//       },
+//       set(password)
+//       {
+//          this._password = password;
+//       },
+
+      
+      
+//       get()
+//       {
+//           return this._email.toUpperCase();
+//       },
+//       set(eamil)
+//       {
+//           this._email = eamil;
+//       },
+  
+// }
+
+// let user6 = Object.create(User04);
+// console.log(user6._username);
+// console.log(user6._password);
+// console.log(user6._email);
+// console.log(user6.username);
+// console.log(user6.password);
+// console.log(user6.email);
+
+
+
+
+// let User05 = {
+
+//   _firstname: "bina",
+//   _lastname: "ahuja",
+//   _salary: "12333",
+//   _hiredate: Date(),
+
+//   get firstname()
+//   {
+//       return this._firstname.toUpperCase();
+//   },
+//   set firstname(firstnamevalue)
+//   {
+//       this._firstname = firstnamevalue;
+//   },
+//   get lastname()
+//   {
+//       return this._lastname.toUpperCase();
+//   },
+//   set lastname(lastnamevalue)
+//   {
+//       this._lastname = lastnamevalue;
+//   },
+//   get salary()
+//   {
+//       return this._salary.toUpperCase();
+//   },
+//   set salary(salaryvalue)
+//   {
+//       this._salary = salaryvalue;
+//   },
+//   get hiredate()
+//   {
+//       return this._hiredate.toUpperCase();
+//   },
+//   set hiredate(hiredatevalue)
+//   {
+//       this._hiredate = hiredatevalue;
+//   }
+
+// }
+
+// let user05 = Object.create(User05);
+// console.log(user05.firstname);
+// console.log(user05.lastname);
+// console.log(user05.salary);
+// console.log(user05.hiredate+"\n");
+// console.log(user05._firstname);
+// console.log(user05._lastname);
+// console.log(user05._salary);
+// console.log(user05._hiredate);
+
+
+
+
+// let User06 = {
+
+//   _firstname: "hiren",
+//   _lastname: "pandya",
+//   _salary: "12900",
+//   _hiredate: Date(),
+//   _email: "hirenpandya@gmail.com",
+//   _region: "Junagadh",
+
+
+//   get firstname()
+//   {
+//       return this._firstname.toUpperCase();
+//   },
+//   set firstname(firstnamevalue)
+//   {
+//       this._firstname = firstnamevalue;
+//   },
+
+  
+//   get lastname()
+//   {
+//       this._lastname.toUpperCase();
+//   },
+//   set lastname(lastnamevalue)
+//   {
+//       this._lastname = lastnamevalue;
+//   },
+
+
+//   get salary()
+//   {
+//       this._salary.toUpperCase();
+//   },
+//   set salary(salaryvalue)
+//   {
+//       this._salary = salaryvalue;
+//   },
+
+
+//   get hiredate()
+//   {
+//       this._hiredate.toLowerCase();
+//   },
+//   set hiredate(hiredatevalue)
+//   {
+//       this._hiredate = hiredatevalue;
+//   },
+
+
+//   get email()
+//   {
+//       this._email.toUpperCase();
+//   },
+//   set email(emailvalue)
+//   {
+//       this._email = emailvalue;
+//   },
+
+
+//   get region()
+//   {
+//       this._region.toUpperCase();
+//   },
+//   set region(regionvalue)
+//   {
+//       this._region = regionvalue;
+//   }
+
+// }
+
+
+// let user06 = Object.create(User06);
+// console.log(user06.firstname);
+// console.log(user06._firstname);
+// console.log(user06.lastname);
+// console.log(user06._lastname);
+// console.log(user06.salary);
+// console.log(user06._salary);
+// console.log(user06.hiredate);
+// console.log(user06._hiredate);
+// console.log(user06.region);
+// console.log(user06._region);
+
+
+
+
+// class User07
+// {
+//     constructor(username)
+//     {
+//        this._usernameone = username;
+//     }    
+//     get usernameone()
+//     {
+//         return this._usernameone.toUpperCase();
+//     }
+//     set usernameone(usernamevalue)
+//     {
+//         this._usernameone = usernamevalue;
+//     }
+
+// }
+
+// let user07 = new User07("shivani");
+// console.log(user07._usernameone);
+// console.log(user07.usernameone);
+
+
+// function User08(username)
+// {
+//     this._usernameone = username;
+    
+//     Object.defineProperty(this,'usernameone',{
+
+//           get: function()
+//           {
+//               return this._usernameone.toUpperCase();
+//           },
+//           set: function(usernamevalue)
+//           {
+//               this._usernameone = usernamevalue;
+//           }
+//     })    
+// }
+// let user08 = new User08("tu-kar-bhi-kya-sakta-hai");
+// console.log(user08.usernameone);
+// console.log(user08._usernameone);
+
+
+
+// let User09 = {
+
+//     _username: "wohann",
+//     _password: "wohan123",
+
+//     get username()
+//     {
+//         return this._username.toUpperCase();
+//     },
+//     set username(usernamevalue)
+//     {
+//         this._password.toUpperCase();
+//     }
+// }
+
+// let user09 = Object.create(User09);
+// console.log(user09.username);
+// console.log(user09.password);
+// console.log(user09._username);
+// console.log(user09._password);
+
+
+
+// class User10
+// {
+//     constructor(firstname)
+//     {
+//         this._firstnameone = firstname;
+//     }    
+//     get firstnameone()
+//     {
+//         return this._firstnameone.toUpperCase();
+//     }
+//     set firstnameone(firstnamevalue)
+//     {
+//         this._firstnameone = firstnamevalue;
+//     }
+// }
+// let user10 = new User10("rajat");
+// console.log(user10.firstnameone);
+// console.log(user10._firstnameone); 
+
+
+
+// function User11(username)
+// {
+//     this._usernameone = username;
+
+//     Object.defineProperty(this,'usernameone',
+//     {
+//        get usernameone()
+//        {
+//           return this._usernameone.toUpperCase();
+//        },
+//        set usernameone(uservalue)
+//        {
+//           this._usernameone = uservalue;
+//        }
+//     })
+// }
+// let user11 = new User11("taranum");
+// console.log(user11.usernameone);
+// console.log(user11._usernameone);
+
+
+
+// let User12 = {
+
+//       _usernameone: "Jugnu",
+//       
+
+//       get usernameone()
+//       {
+//           return this._usernameone.toUpperCase();
+//       },
+//       set usernameone(usernamevalue)
+//       {
+//           this._usernameone = usernamevalue;
+//       }
+// }
+// let user12 = Object.create(User12);
+// console.log(user12.usernameone);
+// console.log(user12._usernameone);
+
+
+
+
+
+// class User13
+// {
+//     constructor(username)
+//     {
+//         this._usernameone = username;        
+//     }
+//     get usernameone()
+//     {
+//         return this._usernameone.toUpperCase();
+//     }
+//     set usernameone(uservalue)
+//     {
+//         this._usernameone = uservalue;
+//     }
+// }
+// let user13 = new User13("vrinda");
+// console.log(user13._usernameone);
+// console.log(user13.usernameone);
+
+
+
+
+// function User14(username)
+// {
+//     this._usernameone = username;
+
+//     Object.defineProperty(this,'usernameone',{
+
+//         get usernameone()
+//         {
+//             return this._usernameone.toUpperCase();
+//         },
+//         set usernameone(uservalue)
+//         {
+//             this.usernameone = uservalue;
+//         }
+//     })
+// }
+// let user14 = new User14("jjjj");
+// console.log(user14._usernameone);
+// console.log(user14.usernameone);
+
+
+  
+
+  // let User15 = {
+      
+  //     _username: "tribhuvan",    
+
+  //     get username()
+  //     {
+  //         return this._username.toUpperCase();
+  //     },            
+  //     set username(uservalue)
+  //     {
+  //         this._username = uservalue;
+  //     }
+
+  // }
+  // let user15 = Object.create(User15);
+  // console.log(user15.username);
+  // console.log(user15._username);
+
+
+
+
+  </script>
+</html>

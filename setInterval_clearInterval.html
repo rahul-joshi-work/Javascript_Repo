@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval_clearInterval</title>
+</head>
+<body>
+    <h2>setInterval_&_clearInterval</h2>
+    <button id="start">Start</button></br></br>
+    <button id="stopbtn">Stop</button></br>
+</body>
+ <script>
+
+
+let stopwatch;
+
+let startDate = document.querySelector('#start').addEventListener('click',function(event){
+
+    event.preventDefault();
+    event.stopPropagation();
+
+    stopwatch = setInterval(function(){
+            console.log(Date());
+    },1000);
+
+},false);
+
+let endDate = document.querySelector('#stopbtn').addEventListener('click',function(event){
+
+        event.preventDefault();
+        event.stopPropagation();
+        clearInterval(stopwatch);
+        console.log("Stop");
+        
+
+},false);
+
+// setInterval()
+// clearInterval()
+// setTimeout()
+// clearTimeout()
+
+ </script>
+</html>

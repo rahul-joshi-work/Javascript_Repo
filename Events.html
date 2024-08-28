@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Events</title>
+</head> 
+ 
+  <body style="background-color: black; color: white;">
+   <div id="images">  
+    <ul>       
+
+  <!-- 
+  
+  <li><img src="./imgs/one.jpg" id="photoshop" style="height:200px; width:200px;" onclick="alert('this is photoshop')"></li>      
+
+  <li><img src="./imgs/two.jpg" id=" japan" style="height:200px; width:200px;" onclick="alert('japan is clicked');"></li> 
+
+  <li><img src="./imgs/three.jpg" id="river" style="height:200px; width:200px;" onclick="alert('river is clicked');"></li>
+
+  <li><img src="./imgs/four.jpg" id="owl" style="height:200px; width:200px;" onclick="alert('owl is clicked')"></li>
+
+  <li><img src="./imgs/five.jpg" id="prayer" style="height:200px; width:200px;" onclick="alert('prayer is clicked')"></li>
+
+  <li><img src="./imgs/six.jpg" id="six" style="height:200px; width:200px;" onclick="alert('six is clicked')"></li>
+
+  <li><img src="./imgs/seven.jpg" id="seven" style="height:200px; width:200px;" onclick="alert('seven is clicked')"></li>
+
+  <li><img src="./imgs/eight.jpg" id="eight" style="height:200px; width:200px;" onclick="alert('eight is clicked')" ></li>
+
+  <li><img src="./imgs/nine.jpg" id="nine" style="height: 200px; width: 200px;" onclick="alert('nine is clicked')"></li>
+
+  <li><img src="./imgs/ten.jpg" id="ten" style="height:200px; width:200px;" onclick="alert('ten is clicked');"></li>
+
+  <li><a href="https://google.com" id="google" onclick="alert('google is clicked')">Google</a></li> 
+  
+  -->
+    
+    <li><img src="./imgs/one.jpg" id="one" style="height:200px; width:200px;"></li>    
+
+    <li><img src="./imgs/two.jpg" id="two" style="height:200px; width:200px;"></li> 
+
+    <li><img src="./imgs/three.jpg" id="three" style="height:200px; width:200px;"></li>
+
+    <li><img src="./imgs/four.jpg" id="four" style="height:200px; width:200px;"></li>
+
+    <li><img src="./imgs/five.jpg" id="five" style="height:200px; width:200px;"></li>
+
+    <li><img src="./imgs/six.jpg" id="six" style="height:200px; width:200px;"></li>
+
+    <li><img src="./imgs/seven.jpg" id="seven" style="height:200px; width:200px;"></li>
+
+    <li><img src="./imgs/eight.jpg" id="eight" style="height:200px; width:200px;"></li>
+
+    <li><img src="./imgs/nine.jpg" id="nine" style="height: 200px; width: 200px;"></li>
+
+    <li><img src="./imgs/ten.jpg" id="ten" style="height:200px; width:200px;"></li>
+
+    <li><a href="https://google.com" id="google">Google</a></li>
+
+  </ul>
+</div>
+</body>
+ <script>    
+    
+    // let id1  = document.getElementById('photoshop').onclick = function() { alert('photoshop is licked'); }
+    // let id2  = document.getElementById('japan').onclick = function() { alert('Japan is clicked'); }
+    // let id3  = document.getElementById('river').onclick = function() { alert('River is clicked'); }
+    // let id4  = document.getElementById('owl').onclick = function() { alert('Owl is clicked'); } 
+    // let id5  = document.getElementById('prayer').onclick = function() { alert('prayer is clicked'); }  
+    // let id6  = document.getElementById('google').onclick = function() { alert('Google is clicked'); }
+    // let id7  = document.getElementById('six').onclick = function() { alert('six image is clicked'); }
+    // let id8  = document.getElementById('seven').onclick = function() { alert('seven is clicked'); }
+    // let id9  = document.getElementById('eight').onclick = function() { alert('eight is clicked'); }
+    // let id10 = document.getElementById('nine').onclick = function() { alert('nine is clicked'); }
+    // let id11 = document.getElementById('ten').onclick = function() { alert('Ten is clicked'); }
+    // let id12 = document.getElementById('google').onclick = function() { alert('Google is clicked'); }    
+
+    // console.log(id1);
+    // console.log(id2);
+    // console.log(id3);
+    // console.log(id4);
+    // console.log(id5);
+    // console.log(id6);
+    // console.log(id7);
+    // console.log(id8);
+    // console.log(id9);
+    // console.log(id10);
+    // console.log(id11);
+    // console.log(id12);
+
+
+    // let m1 = document.getElementById('one').addEventListener('click', function() {
+    //   alert('one is clicked');
+    // });
+
+    
+    // let m2 = document.getElementById('two').addEventListener('click', function() {
+    //   alert('two is clicked');
+    // });
+
+    
+    // let m3 = document.getElementById('three').addEventListener('click', function(){
+    //   alert('three is clicked');
+    // });
+
+    
+    // let m4 = document.getElementById('four').addEventListener('click', function() {
+    //   alert('four is clicked');
+    // });
+
+    
+    // let m5 = document.getElementById('five').addEventListener('click',function() {
+    //   alert('five is clicked');
+    // });
+
+    
+    // let m6 = document.getElementById('six').addEventListener('click',function() {
+    //   alert('six is clicked');
+    // });
+    
+    
+    // let m7 = document.getElementById('seven').addEventListener('click',function() {
+    //   alert('seven is clicked');
+    // });
+
+    
+    // let m8 = document.getElementById('eight').addEventListener('click', function() {
+    //   alert('Eight is clicked');
+    // });
+
+    
+    // let m9 = document.getElementById('nine').addEventListener('click', function() {
+    //   alert('nine is clicked');
+    // });
+
+    
+    // let m10 = document.getElementById('ten').addEventListener('click',function(){
+    //   alert('ten is clicked');
+    // });
+
+    // let m11 = document.getElementById('google').addEventListener('click',function() {
+    //   alert('Google is clicked');
+    // });
+
+
+
+  //Event propogations bbableingUP(inside to outside).
+
+  // document.getElementById('images').addEventListener('click',function(){
+  //   console.log('ul is clicked');
+  // },false);
+  
+  // document.getElementById('one').addEventListener('click',function(e){
+  //   console.log('one is clicked');
+  //   e.stopPropagation();
+  // });
+
+  // document.getElementById('google').addEventListener('click',function(event){
+  //   event.preventDefault();
+  //   event.stopPropagation();
+  //   console.log('Google is clicked');
+  // });
+
+  
+// delete with <li> tag and with <ul> tags.
+// document.querySelector('#images').addEventListener('click',function(event){
+
+//     event.preventDefault();
+//     event.stopPropagation();
+//     let removeLI = event.target.parentNode;
+//     removeLI.remove();
+
+// });
+
+
+
+
+
+//clicking with delete operations with propagation. 
+// document.querySelector('#images').addEventListener('click',function(event){
+
+//     event.preventDefault();
+//     event.stopPropagation();
+//     if(event.target.tagName === 'IMG')
+//     {
+//       let removeLI = event.target.parentNode;
+//       removeLI.remove();
+//     }
+
+// });
+  
+
+
+
+ </script>
+</html>

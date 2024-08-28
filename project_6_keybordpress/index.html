@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keybord press</title>
+</head>
+<body>
+    <h2>Keybord Press Project.</h2>
+    <p id="InsertValues"></p>
+</body>
+ <script>
+    
+ window.addEventListener("keypress",function(event){
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        let Insertvalues = document.getElementById('InsertValues');
+        Insertvalues.innerHTML = `        
+        
+            <table border="5" style="color:black; backgroundColor: silver;"> 
+              <tr>
+                <th>Key</th>
+                <th>Keycode</th>
+                <th>Values</th>
+              </tr>
+              
+              <tr>
+                <td>${event.key == ' ' ? "space" : event.key}</td>
+                <td>${event.keyCode}</td>
+                <td>${event.code}</td>
+              </tr>
+            </table>
+         `;
+
+    });    
+ </script>
+</html>

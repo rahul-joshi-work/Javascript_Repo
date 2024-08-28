@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClientX</title>
+</head>
+<body>
+  <h3>Move your mouse to see its position.</h3>
+  <p id="screenLog"></p>
+</body>
+ <script>
+    
+    let screenLog = document.getElementById('screenLog');
+    document.addEventListener("mousemove",function(event){
+
+       screenLog.innerHTML = `screenX/Y: ${event.screenX} , ${event.screenY}
+                              clientX/Y: ${event.clientX} , ${event.clientY}`;
+    
+    },false);
+
+
+ </script>
+</html>

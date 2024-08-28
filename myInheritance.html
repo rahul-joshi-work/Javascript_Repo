@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+</head>
+ <style>
+    body
+    {
+       background-color: black;
+       color: white;
+    }
+ </style>
+ <body>
+  <h2>Inheritance</h2>
+ </body>
+ <script>
+    
+   //  class user1
+   //  {
+   //      constructor(username)
+   //      {   
+   //         this.usernameone = username;           
+   //      }
+   //      Logme()
+   //      {
+   //         console.log("LOG method called");
+   //         console.log(`LOGusername: ${this.usernameone}`);           
+   //      }
+   //  }    
+    
+   //  class teacher extends user1
+   //  {
+   //      constructor(username,password,email)
+   //      {
+   //          super(username);
+   //          this.passwordone = password;
+   //          this.emailone = email;            
+   //      }
+   //      TeacherLog()
+   //      {
+   //         console.log("TeacherLog method");
+   //         console.log(`TeacherLogMethod Username: ${this.usernameone}`);           
+   //      }
+   //  }
+
+   //  let one = new teacher("Raju","Raju123","Raju@gmail.com");
+   //  console.log(one.Logme());
+   //  console.log(one.TeacherLog());
+
+   // class User2
+   // {
+   //    constructor(username,password,email,phonenumber)
+   //    {
+   //       this.usernameone = username;
+   //       this.passwordone = password;
+   //       this.emailone = email;
+   //       this.phonenumber = phonenumber;
+   //    }
+   //    UserLogs()
+   //    {
+   //       console.log("UserLogs is called");
+   //    }
+   // }
+   
+   // class teacher1 extends User2
+   // {
+   //    constructor(username,password,email,phonenumber)
+   //    {
+   //       super(username,password,email,phonenumber);
+   //    }
+   //    TeacherLog()
+   //    {
+   //       console.log("TeacherLogs is called");
+   //    }
+   // }
+   // let teacher01 = new teacher1("Pandya","Suraj123","Suraj@gmail.com","8460014690");
+   // console.log(teacher01);
+   // console.log(teacher01.UserLogs());
+   // console.log(teacher01.TeacherLog());
+   // console.log(typeof(User2));
+
+
+   // class User3
+   // {
+   //       constructor(username,password,email,phoneNumber)
+   //       {
+   //          this.usernameone = username;
+   //          this.passwordone = password;
+   //          this.emailone = email;
+   //          this.phoneNumberone = phoneNumber; 
+   //       }
+   //       User3Logs()
+   //       {
+   //          console.log("User3Logs is called");
+   //       }
+   // }
+   
+   // class teacher2 extends User3
+   // {
+   //    constructor(username,password,email,phoneNumber)
+   //    {
+   //       super(username,password,email,phoneNumber);
+   //    }
+   //    teacher2Logs()
+   //    {
+   //       console.log("teacher2Logs is called");
+   //    }
+   // }
+   
+   // class teacher3 extends teacher2
+   // {
+   //    constructor(username,password,email,firstname,lastname)
+   //    {  
+   //       super();
+   //       this.firstnameone = firstname;
+   //       this.lastnameone = lastname;         
+   //    }
+   //    teacher3Logs()
+   //    {
+   //       console.log("teacher3Logs is called");        
+   //    }
+   // }   
+   // let teacher02 = new teacher2("Faruk","Faruk123","Faruk@gmail.com",8460014690);
+   // let teacher03 = new teacher3("Gohil","Raj");
+   // console.log(teacher02);
+   // console.log(teacher02.User3Logs());
+   // console.log(teacher02.teacher2Logs());
+   // console.log(teacher03.teacher3Logs());
+
+   // class User4
+   // {
+   //    constructor(username,password,email)
+   //    {  
+   //       this.usernameone = username;
+   //       this.passwordone = password;
+   //       this.emailone = email;
+   //    }  
+   // }
+   
+   // class teacher4 extends User4
+   // {
+   //    constructor(username,password,email,firstname,lastname)
+   //    {
+   //       super(username,password,email);
+   //       this.firstnameone = firstname;
+   //       this.lastnameone = lastname;     
+   //    }
+   //    teacher4Log()
+   //    {
+   //       console.log(`${this.usernameone.toUpperCase()}`);
+   //    }
+   // }
+
+   // class teacher5 extends teacher4
+   // {
+   //    constructor(hiredate,regions)
+   //    {
+   //       this.hiredateone = hiredate;
+   //       this.regionone = regions;
+   //    }
+   //    teacher5Logs()
+   //    {
+   //       console.log("teacher5Logs");
+   //    }
+   // }
+   
+   // let teacher04 = new teacher4("Gunjan","Gunjan123","Gunjan@gmail.com","kilbill-1","kilbill-2");
+   // console.log(teacher04);
+   // console.log(teacher04.teacher4Log());
+   // console.log(User4 instanceof teacher4);
+
+
+
+   // class User5 
+   // {      
+   //    constructor(firstname,lastname)
+   //    {
+   //       this.firstnameone = firstname;
+   //       this.lastnameone = lastname;
+   //    }
+   //    User5Logs()
+   //    {
+   //       console.log("User5Logs is called");
+   //    }
+   // }   
+
+   // class teacher5 extends User5
+   // {
+   //     constructor(firstname,lastname,salary,hiredate)
+   //     {
+   //        super(firstname,lastname);
+   //        this.salaryone = salary;
+   //        this.hiredateone = hiredate;          
+   //     }       
+   //     teacher5Logs()
+   //     {
+   //       console.log("teacher5Logs is called");
+   //     }
+   // } 
+
+   // let teacher05 = new teacher5("Rahul","Joshi",12900,Date());
+   // let teacher06 = new teacher5("Rahul","Joshi",12900,Date());
+   // console.log(teacher06.User5Logs());
+   // console.log(teacher06.teacher5Logs());
+   // console.log(teacher05 === teacher06);
+   // console.log(teacher05 === User5);
+
+
+    
+ </script>
+</html>

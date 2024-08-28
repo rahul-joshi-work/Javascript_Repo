@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event_shiftkey</title>
+</head>
+<body>
+  <h2 id="shiftkey"></h2>
+  <h2 id="ctrlkey"></h2>
+</body>
+ <script>
+    let shiftkey = document.getElementById('shiftkey');
+    document.addEventListener("keydown",function(event){
+
+        if(event.shiftKey)
+        {
+           shiftkey.textContent = `shiftkey is press`;
+        } 
+        else
+        {
+           shiftkey.textContent = `not pressed`;
+        }
+    
+    },false);
+
+   //  let ctrlkey = document.getElementById('ctrlkey');
+   //  document.addEventListener("keydown",function(event){
+
+   //    if(event.ctrlkey)
+   //    {
+   //       ctrlkey.innerHTML = `Ctrlkey is pressed`;
+   //    }
+   //    else 
+   //    {
+   //       ctrlkey.innerHTML = `ctrlkey not pressed`;
+   //    }
+    
+   // },false);
+ </script>
+</html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OOP_Prototype_Inheritance</title>
+</head>
+<body bgcolor="black" text="white">
+  <h2>OOP_Prototype_Inheritance</h2>
+</body>
+ <script>
+    
+    // let myName = "Rahul   ";
+    // console.log(myName);
+
+    // let myName1 = "Raviraj_Purohit     ";
+    // console.log("Raviraj_Purohit-----myName1.trim().length = " + myName1.trim().length);
+
+    // console.log(myName1.truelength);
+
+    
+    // 1
+    // let myArray1 = ["thor","spiderman"];   
+    // Array.prototype.RahulWithArray1 = function()
+    // {
+    //    console.log("Rahulwitharrayisfire-1");
+    // }  
+    // myArray1.RahulWithArray1();
+    
+    
+    // 2
+    // let myArray2 = ["one","two","three","four"];
+    // Array.prototype.Rahulwitharray2 = function()
+    // {
+    //   console.log("Rahulwitharrayisfire-2");
+    // }
+    // myArray2.Rahulwitharray2();
+
+
+    // 3
+    // let myArray3 = ["tiger","shroff","ahiya"];
+    // Array.prototype.RahulwithArray3 = function()
+    // {
+    //   console.log("Rahulwitharrayisfire-3");
+    // }
+    // myArray3.RahulwithArray3();
+
+
+    // 4
+    // let myArray4 = ["sidharth","jai","raj"];
+    // Array.prototype.RahulwithArray4 = function()
+    // {
+    //   console.log("Rahulwitharrayisfire-4");
+    //   return 0;
+    // }
+    // myArray4.RahulwithArray4();
+
+
+    // 5 
+    // let myArray5 = ["naman","jivrajani","sanjay"];
+    // Array.prototype.RahulwithArray5 = function()
+    // {
+    //   console.log("RahulwithArrayisfire-5");
+    // }
+    // myArray5.RahulwithArray5()
+
+
+    // 6 
+    // let myArray6 = ["tum","agaye","ho","noor"];
+    // Array.prototype.RahluwithArray6 = function()
+    // {
+    //   console.log("RahulwithArrayisfire - 6");
+    // }
+    // myArray6.RahluwithArray6();
+
+    
+    // 7
+    // let myArray7 = ["tamari","bachu","chai"];
+    // Array.prototype.Rahulwitharray7 = function()
+    // {
+    //   console.log("RahulwithArrayisfire - 7");
+    // }
+    // myArray7.Rahulwitharray7();
+
+
+    //8
+    // let myArray8 = ["sabko","ho","rahi","hai"];
+    // Array.prototype.Rahulwitharray8 = function()
+    // {
+    //   console.log("Rahulwitharray - 8 is fire");
+    // }
+    // myArray8.Rahulwitharray8();
+
+    
+    //9
+    // let myArray9 = ["bate","kar","rahi","hai"];
+    // Array.prototype.Rahulwitharray9 = function()
+    // {
+    //   console.log("Rahulwitharray - 9 is fire");
+    // }
+    // myArray9.Rahulwitharray9()
+
+
+    //10
+    // let myArray10 = ["dailymoshin","shivashtav","gandhi"];
+    // Array.prototype.Rahulwitharray10 = function()
+    // {
+    //   console.log("Rahulwitharray - 10 is fire");
+    // }
+    // myArray10.Rahulwitharray10();
+
+
+//===========================================================================================
+
+ 
+    // using with object with prototype it has to access to the all 
+    // ObjectFunctions, ObjectString, ObjectArray.
+
+    
+    // 1
+    // let object1 = {
+    //   name: "rahul",
+    //   surname: "joshi",
+    //   address: "junagadh"      
+    // }
+    // Object.prototype.obj1 = function()
+    // {
+    //   console.log("Obj-1 is method");
+    //   return 0;
+    // }
+    // console.log(object1.obj1());
+
+
+    // 2
+    // let object2 = {
+    //   name: "Rohan",
+    //   surname: "Vijay",
+    //   location: "Amreli"
+    // }
+    // Object.prototype.obj2 = function()
+    // {
+    //   console.log("Obj-2 is method");
+    //   return 0;
+    // }
+    // object2.obj2();
+    
+
+    // 3
+    // let object3 = {
+    //   name: "girish",
+    //   surname: "sharma",
+    //   location: "Jamnagar"
+    // }
+    // Object.prototype.obj3 = function()
+    // {
+    //   console.log("Obj-3 is method");
+    // }
+    // object3.obj3();
+
+
+    // 4
+    // let object4 = {
+    //   name: "vivan",
+    //   surname: "joshi",
+    //   address: "Junagadh"
+    // }
+    // Object.prototype.obj4 = function()
+    // {
+    //   console.log("Obj-4 is method");
+    // }
+    // object4.obj4();
+
+
+    // 5 
+    // let object5 = {
+    //   name: "ShivashTav",
+    //   surname: "Janam",
+    //   address: "Junagadh"
+    // }
+    // Object.prototype.obj5 = function()
+    // {
+    //   console.log("Obj-5 is method");
+    // }
+    // object5.obj5();
+
+
+    // 6 
+    // let object6 = {
+    //   name: "shivani",
+    //   surname: "gajraj"
+    // }
+    // Object.prototype.obj6 = function()
+    // {
+    //   console.log("Obj-6 is method");
+    // }
+
+
+    
+    // 7 
+    // let object7 = {
+    //   name: "vishva",
+    //   surname: "karma"
+    // }
+    // Object.prototype.obj7 = function()
+    // {
+    //   console.log("obj - 7 is method");
+    // }
+    // object7.obj7();
+
+
+    // 8
+    // let object8 = {
+    //   name: "Sir_Atul",
+    //   surname: "Kubavat"
+    // }
+    // Object.prototype.obj8 = function()
+    // {
+    //   console.log("obj - 8 is method");
+    // }
+    // object8.obj8();
+
+
+    // 9 
+    // let object9 = {
+    //   firstname: "Tina",
+    //   lastname: "Munim",
+    // }
+    // Object.prototype.obj9 = function()
+    // {
+    //   console.log("obj - 9 is method");
+    // }
+    // object9.obj9();
+
+
+    // 10
+    // let object10 = {
+    //   salary: "10000",
+    //   Date: "01-10-2022"
+    // }
+    // Object.prototype.obj10 = function()
+    // {
+    //   console.log("obj - 10 is method");
+    // }
+    // object10.obj10();
+
+
+
+    // let myObject = 
+    // {      
+    //   thor: "Hammer",
+    //   spiderman: "sling",
+      
+    //   getSpiderPower: function(){
+    //     console.log(`SpiderPower is ${this.spiderman}`);
+    //   },
+
+    //   getThorPower: function(){
+    //     console.log(`ThorPower is ${this.thor}`);
+    //   }
+    // }   
+    
+    // Object.prototype.myObjectmethod = function()
+    // {
+    //   console.log("Super Object with all Objects Accessing"); 
+    // }
+    // myObject.myObjectmethod(); 
+
+    // we are applying and access with toplevel hirechy with all Objects likes:
+    // we are also used   
+    // 1] function with object
+    // 2] array with object 
+    // 3] string with object 
+
+//================================================================================================
+
+ 
+// object to another object accessable for this methods 
+// this is an old approch, and we are not using now days
+
+   let user = {
+      name: "chai",
+      email: "rahul@gmail.com"
+   }
+
+  let Teacher = {
+    makeVideo: true
+  }
+
+  let TeachingSupport = {
+    isAvailable: false,
+    __proto__: Teacher  
+  }
+    
+  let TASupport = {
+     makeAssignment: 'JS Assignment',
+     fulltime: true,
+     __proto__: TeachingSupport
+  }
+
+  // console.log(TASupport);  
+  
+  // nowdays we are using with another methods.
+  
+  // let one = Object.setPrototypeOf(TASupport,Teacher);
+  // console.log(one);
+
+  
+  
+  //========================================================================================
+  
+  // 1
+  // let Username1 = "ChaiOrCode";
+  // String.prototype.trueLength1 = function()
+  // {
+  //   console.log(`Values:${this}, & Length = ${this.trim().length}`);
+  // }    
+  // Username1.trueLength();
+  // "Tarun".trueLength();
+
+  
+  // 2
+  // let Username2 = "OneAnotherName";
+  // String.prototype.trueLength2 = function()
+  // {
+  //   console.log(`Value: ${this}, Length: ${this.trim().length}`);
+  // }
+  // Username2.trueLength2();
+  // "Username2".trueLength2();
+
+
+  // 3
+  // let Username3 = "TwoAnotherName";
+  // String.prototype.trueLength3 = function()
+  // {
+  //   console.log(`Value:${this}, Length: ${this.trim().length}`);
+  // }
+  // Username3.trueLength3();
+  // "Username3".trueLength3();
+
+
+  // 4
+  // let Username4 = "ThreeAnotherName";
+  // String.prototype.trueLength4 = function()
+  // {
+  //   console.log(`Value: ${this}, Length: ${this.trim().length}`);
+  // }
+  // Username4.trueLength4();
+  // "Username4".trueLength4();
+
+
+  // 5
+  // let Username5 = "FiveAnotherName";
+  // String.prototype.trueLength5 = function()
+  // {
+  //   console.log(`Value: ${this}, Length: ${this.trim().length}`);
+  // }
+  // Username5.trueLength5();
+  // "Username5".trueLength5();
+
+
+  // 6
+  // let Username6 = "SixAnotherName";
+  // String.prototype.trueLength6 = function()
+  // {
+  //   console.log(`Value: ${this}, Length: ${this.trim().length}`);
+  // }
+
+
+  // 7
+  // let Username7 = "SevenAnotherName";
+  // String.prototype.trueLength7 = function()
+  // {
+  //   console.log(`Values: ${this}, Length: ${this.trim().length}`);
+  // }
+  // Username7.trueLength7();
+  // "Username7".trueLength7();
+
+
+  // 8
+  // let Username8 = "EightAnotherName";
+  // String.prototype.trueLength8 = function()
+  // {
+  //   console.log(`Value: ${this}, Length: ${this.trim().length}`);
+  // }
+  // Username8.trueLength8()
+  // "Username8".trueLength8();
+  
+
+  // 9
+  // let Username9 = "NineAnotherName";
+  // String.prototype.trueLength9 = function()
+  // {
+  //   console.log(`Value:${this}, Length:${this.trim().length}`);
+  // }
+  // Username9.trueLength9();
+  // "Username9".trueLength9();
+
+
+  // 10 
+  // let Username10 = "TenAnotherName";
+  // String.prototype.trueLength10 = function()
+  // {
+  //   console.log(`Value: ${this}, Length: ${this.trim().length}`);
+  // }
+  // Username10.trueLength10();
+  // Username10.trueLength10();
+
+ </script>
+</html>

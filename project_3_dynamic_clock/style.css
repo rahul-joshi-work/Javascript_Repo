@@ -1,0 +1,24 @@
+body{
+    background-color: black;
+    color: white;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+.center{
+    height: 200px;
+    width: 100%;
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.banner, .clock{
+
+    background-color: aqua;
+    width: 100%;
+}

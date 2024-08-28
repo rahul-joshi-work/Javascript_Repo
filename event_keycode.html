@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keycode_event</title>
+</head>
+<body>
+    <h3>keycode_event</h3></br>
+    <h3 id="keycodes"> <span id="values"></span></h3>    
+</body>
+ <script>
+
+let keys = document.getElementById('keycodes');    
+let values = document.getElementById('values');
+
+document.addEventListener("keydown",function(event){
+
+    event.preventDefault();
+    event.stopPropagation();
+
+    if(event.keyCode)
+    {
+        keys.innerHTML   = `keycode is : ${event.keyCode}`;            
+        values.innerHTML = `Values is :  ${event.value}`;
+    }    
+    else
+    {
+        Keycode1.innerHTML = `not pressed`;
+    }
+
+ },false);
+ </script>
+</html>

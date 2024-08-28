@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout_clearTimeout_Event</title>
+</head>
+<body>
+ <h2 id="changeText">setTimeout & clearTimeout</h2></br>
+  <button id="stopbtn">stop</button>
+  <button id="reset">Reset</button>
+</body>
+ <script>
+
+    // execute direct setTimeout() method. 
+
+    // setTimeout(function(){
+    //     console.log("this setTimeout() method fire");
+    // },1000);
+
+    // setTimeout(function(){
+    //     console.log("second setTimeout() method is fire");
+    // },2000);
+
+    // setTimeout(function(){
+    //     console.log("Third setTimeout() method is fire");
+    // },3000);
+
+    // setTimeout(function(){
+    //     console.log("fourth setTimeout() method is fire");
+    // },4000);
+
+    // setTimeout(function(){
+    //     console.log("five setTimeout() method is fire");
+    // },5000);
+
+    // setTimeout(function(){
+    //     console.log("sixth setTimeout() method is fire");
+    // },6000);
+
+    // setTimeout(function(){
+    //     console.log("seven setTimeout() method is fire");
+    // },7000);
+
+    // setTimeout(function(){
+    //     console.log("eight setTimeout() method is fire");
+    // },8000);
+
+    // setTimeout(function(){
+    //     console.log("nine setTimeout() method is fire");
+    // },9000);
+
+
+//=============================================================================
+
+    //function with setTimeout() method is fire.
+
+    // let hello = function() 
+    // {
+    //     console.log("hello Rahul I'am there");
+    // }
+    // setTimeout(hello,1000);
+
+    
+    // let hi = function()
+    // {
+    //     console.log("Hi rahul I'am Vipul Kariya");
+    // }
+    // setTimeout(hi,2000);
+
+    
+    // let tiptip = function()
+    // {
+    //     console.log("Tip Tip varsaa pani");
+    // }
+    // setTimeout(tiptip,3000);
+
+    
+    // let virzaara = function()
+    // {
+    //     console.log("Dopal rukaa khawaaboo ka karva");
+    // }
+    // setTimeout(virzaara,4000);
+
+    
+    // let doctor = function()
+    // {
+    //     console.log("doctor strange");
+    // }
+    // setTimeout(doctor,5000);
+
+    
+    // let rivervilla = function()
+    // {
+    //     console.log("RiverVilla - Society");
+    // }
+    // setTimeout(rivervilla,6000);
+
+    
+    // let Kamdhenu = function()
+    // {
+    //     console.log('Tame kem nathi samajata');
+    // }
+    // setTimeout(Kamdhenu,7000);
+
+    
+    // let AnotherOne = function()
+    // {
+    //     console.log("AnotherOne is fire");
+    // }
+    // setTimeout(AnotherOne,8000);
+    
+    // let FunctionOne = function()
+    // {
+    //     console.log("LastFunction is fired");
+    // }
+    // setTimeout(FunctionOne,9000);
+
+
+    // let sayhello = function()
+    // {
+    //     console.log("say hello");
+    // }
+    // setTimeout(sayhello,10000);
+
+     
+    let a = setTimeout(function(){
+      document.querySelector('#changeText').innerHTML = `Mmmeeta Chaliyaa ye soor kitaa `;
+      console.log('fire');
+    },3000);
+
+    document.querySelector("#stopbtn").addEventListener('click',function(event){ 
+
+      event.preventDefault();
+      event.stopPropagation();
+      clearTimeout(a);
+      console.log("stop is fire");
+    });
+
+      
+    document.querySelector('#reset').addEventListener('click',function(event){
+
+      event.preventDefault();
+      event.stopPropagation();
+      document.querySelector('#changeText').innerHTML = `Reset : setTimeout & clearTimeout`;     
+      console.log('reset fire');
+
+    },false);
+    
+ </script>
+</html>

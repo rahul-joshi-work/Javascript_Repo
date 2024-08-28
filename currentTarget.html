@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currentTarget</title>
+</head>
+  <style>
+      div{
+            border: 2px solid black;            
+      }
+      #parent{
+        padding: 80px;
+      }
+      #child{
+        padding: 30px;
+      }
+  </style>
+<body>    
+    <div id="parent"><p>click parent</p>
+     <div id="child"><p>click child</p></div>
+    </div>
+    
+</br></br><button id="reset">Reset</button>
+    <p id="output"></p>
+</body>
+ <script>
+    let Parent = document.querySelector('#parent');
+    let Child  = document.querySelector('#child');
+    let Reset  = document.querySelector('#reset');
+    let Output = document.querySelector('#output');
+    
+    Parent.addEventListener('click',function(event){
+
+      const currentTarget = event.currentTarget.getAttribute("id");
+      const target = event.target.getAttribute("id");
+      Output.textContent  = `Current Target = ${currentTarget}\n`;
+      Output.textContent = Output.textContent + `Target = ${target}`;
+
+    },false);
+
+    
+    Reset.addEventListener('click',function(){
+
+       document.location.reload();
+
+    },false);
+
+ </script>
+</html>

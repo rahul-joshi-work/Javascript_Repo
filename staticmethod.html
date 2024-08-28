@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static_method</title>
+</head>
+ <style>
+    body{
+        background-color: black;
+        color: white;
+    }
+ </style>
+<body>
+    <h2>Static_method</h2>
+</body>
+ <script>
+    
+    // let a = 10;
+    // console.log(a);
+
+    // class User1 
+    // {
+    //     constructor(username,email)
+    //     {
+    //         this.usernameone = username;
+    //         this.emailone = email;            
+    //     }
+    //     static UserNumber()
+    //     {
+    //         console.log(`123`);
+    //     }
+    // }
+    
+    // class one extends User1 
+    // {
+    //    constructor(username,email,hiredate)
+    //    {
+    //       super(username,email,hiredate);
+    //       this.hiredateone = hiredate;
+    //    }
+    //    static OneLogNumber()
+    //    {
+    //       return console.log(`456`);          
+    //    }
+    // }
+    // let user1 = new one("Tyagi","Tyagi@gmail.com","10/03/2010");
+    // let user2 = new one("Tyagi","Tyagi@gmail.com","10/03/2010");
+    // console.log(user2.OneLogNumber());
+    // console.log(user2.UserNumber());
+
+
+//     class User2
+//     {
+//         constructor(username,password)
+//         {
+//             this.usernameone = username;
+//             this.passwordone = password;
+//         }
+//         static User2Log()
+//         {
+//            console.log("UsertwoLogs is called");
+//         }
+//     }
+//     class two1 extends User2
+//     {
+//         constructor(username,password,hiredate,email)
+//         {
+//             super(username,password);
+//             this.hiredateone = hiredate;
+//             this.emailone = email;
+//         }
+//         static two2Logs() 
+//         {
+//           console.log("twoLog is called");
+//         }
+//     }
+//    let two11 = new two1("Sitaram","Sitaram123","10/01/2010","rahul@gmail.com");
+//    console.log(two11);
+//    console.log(two11.User2Log());// TypeError: two11.User2Log is not a function.
+//    console.log(two11.two2Logs());
+
+
+
+// class User3
+// {
+//     constructor(username,password)
+//     {
+//         this.usernameone = username;
+//         this.passwordone = password;
+//     }
+//     static UserLogs()
+//     {
+//        console.log("User3Logs");
+//     }
+// }
+// class three3 extends User3
+// {   
+//     constructor(username,password,email,region)
+//     {
+//         super(username,password)
+//         this.emailone = email;
+//         this.regionone =  region;
+//     }  
+//     static three3Logs()
+//     {
+//        console.log("threeLogs");
+//     } 
+// }
+// let Uthree3 = new three3("Hiren","hiren123","Hiren123@gmail.com","Jamnager");
+// console.log(Uthree3);
+// console.log(Uthree3.UserLogs());
+// console.log(Uthree3.three3Logs());
+
+
+// class User4
+// {
+//     constructor(username,password)
+//     {
+//         this.usernameone = username;
+//         this.passwordone = password;
+//     }
+//     static user4logs()
+//     {
+//         console.log("user4log is called")
+//     }
+// }
+// class Four4 extends User4
+// {
+//     constructor(username,password,email,region)
+//     {
+//         super(username,password);
+//         this.emailone = email;
+//         this.regionone = region;
+//     }
+//     static FourLogs()
+//     {
+//         console.log("FourLogs is called");
+//     }
+// }
+// let userfour = new Four4("Gafar","gafar123","gafar@gmail.com","Ketavan");
+// console.log(userfour.user4logs()); //userfour.user4logs is not a function
+// console.log(userfour.FourLogs());
+
+
+// class User5
+// {
+//     constructor(username,password)
+//     {
+//         this.usernameone = username;
+//         this.passwordone = password;
+//     }
+//     static user5Logs()
+//     {
+//         console.log("user5Logs called");
+//     }
+// }
+// class Five5 extends User5
+// {
+//     constructor(username,password,email,pincode)
+//     {
+//         super(username,password);
+//         this.emailone = email;
+//         this.pincodeone = pincode;
+//     }
+//     static Five5Logs()
+//     {
+//         console.log("Five5Logs called");
+//     }
+// }
+// let userfive = new Five5("Python","python123","python@gmail.com","362001");
+// console.log(userfive);
+// console.log(userfive.user5Logs());
+// console.log(userfive.Five5Logs());
+
+
+
+
+// class User6
+// {
+//     constructor(firstname,salary)
+//     {
+//         this.firstnameone = firstname;
+//         this.salaryone = salary;
+//     }
+//     static user6Logs()
+//     {
+//         console.log("use6Logs is called");
+//     }
+// }
+// class six6 extends User6
+// {
+//     constructor(firstname,lastname,salary,hiredate)
+//     {
+//         super(firstname,salary);
+//         this.lastnameone = lastname;
+//         this.hiredateone = hiredate;
+//     }
+//     static six6() 
+//     {
+//         console.log("six6 is called");
+//     }
+// }
+// let six66 = new six6("Guvrav","thanki","14599","10/01/2011");
+// console.log(six66);
+// console.log(six66.user6Logs()); //TypeError: six66.user6Logs is not a function.
+// console.log(six66.six6()); //TypeError: six66.six6 is not a function.
+
+
+
+
+
+
+
+
+// class User7 
+// {
+//     constructor(password,pincode)
+//     {
+//         this.passwordone = password;
+//         this.pincodeone = pincode;
+//     }
+//     static User7method()
+//     {
+//         console.log("user7 is called");
+//     }
+// }
+// class seven7 extends User7
+// {
+//     constructor(password,pincode,salary,username)
+//     {
+//         super(password,pincode);
+//         this.salaryone = salary;
+//         this.usernameone = username;
+//     }
+//     static seven7method()
+//     {
+//         console.log("seven7 is called");
+//     }
+// }
+// let seven77 = new seven7("Rajat123","210125","3022","MohanLal");
+// console.log(seven77);
+// console.log(seven77.User7method());//TypeError: seven77.User7method is not a function.
+// console.log(seven77.seven7method());//TypeError: seven77.seven7method is not a function
+
+
+
+
+ </script>
+</html>

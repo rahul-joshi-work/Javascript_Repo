@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promisewithasync_await</title>
+</head>
+<body style="background-color:black; color:white">
+   <h2>Promise with async/await</h2>
+</body>
+
+ <script>
+   
+   
+//    let Promise1 = new Promise(function(resolve,reject)
+//    {        
+//         setTimeout(function()
+//         {
+//             console.log("Promise1 is called");        
+
+//             let error = true;
+//             if(error)
+//             {
+//                 resolve(
+//                          {
+//                            username: "Krupali", 
+//                            password: "1122"
+//                          }
+//                        );
+//             }            
+//             else
+//             {
+//                reject("Error: something went wrong");
+//             }
+
+//         },2000)
+//    }) 
+
+//     async function consume()
+//     {    
+//          try
+//          {
+//             let P1response = await Promise1;
+//             console.log(P1response);
+//          }
+//          catch(error)
+//          {
+//            console.log(error);
+//          }
+//          finally
+//          {
+//             console.log("finally is called");
+//          }
+//     }
+//     console.log(consume());
+
+
+
+
+
+
+// let Promise2 = new Promise(function(resolve,reject)
+// {
+//     setTimeout(function(){
+        
+//         console.log("Promise2 is called");
+
+//         let error = false;
+
+//         if(error === 0)
+//         {
+//            resolve(
+//                     {
+//                         username: "Yogiraj",
+//                         password: "yogi1234"
+//                     }
+//                   )
+//         }
+//         else
+//         {
+//            reject("Error: reject is called and something went wrong");
+//         }
+
+//     },2000)
+// })
+
+// async function consume1()
+// {
+//     try
+//     {
+//         let promise2 = await Promise2;
+//         console.log(promise2);
+//         console.log("try{} called"); 
+//     }
+//     catch(error)
+//     {
+//         console.log("Error : " + error);
+//         console.log("catch{} is called");
+//     }
+// }
+
+
+
+
+
+
+// let Promise3 = new Promise(function(resolve,reject)
+// {
+//         setTimeout(function()
+//         {
+            
+//             let error = false;
+
+//             if(error)
+//             {
+//                 resolve(
+//                             function one()
+//                             {
+//                                 console.log("One is called");
+//                             }
+//                        );
+//             }
+//             else
+//             {
+//                 reject("Error : reject is called and something went wrong");
+//             }
+//         })
+// })
+
+// async function consume2()
+// {
+//     try
+//     {
+//         let P3 = await Promise3
+//         console.log(P3);
+//         console.log("try is called");
+//     }
+//     catch(error)
+//     {
+//         console.log(error);
+//         console.log("catch is called");
+
+//     }
+// }
+
+// console.log(consume2());
+
+
+
+
+
+
+// let Promise4 = new Promise(function(resolve,reject){
+//     setTimeout(function(){
+//         console.log("Promise-4 is called");
+//         let error = false;
+//         if(error)
+//         {
+//             resolve(function two(){
+
+//                         console.log("two is calling inside resovle");
+            
+//                    });
+//         }
+//         else
+//         {
+//             reject("Error: reject is called and something went wrong");
+//         }
+//     })
+// })
+
+// async function consume3()
+// {
+//     try
+//     {
+//         let P4 = await Promise4;
+//         console.log(P4);
+//         console.log("try is called");
+//     }
+//     catch(error)
+//     {
+//         console.log("Error: " + error);
+//         console.log("catch is called");
+//     }
+// }
+// consume3();
+
+
+
+
+
+
+// new Promise(function(resolve,reject)
+// {
+//     setTimeout(function()
+//     {
+
+//         let error = true;
+
+//         if(error)
+//          {
+//             resolve(
+//                         function three()
+//                         {
+//                             console.log("resolve three is called");
+//                         }
+//                    );
+//          }
+//          else
+//          {
+//             reject("Error: reject is called and something went wrong");
+//          }
+
+//     },2000)
+
+// }).then(function(three)
+// {
+//         console.log("then is called");
+//         console.log("three() = " + three);
+//         return three;
+
+// }).catch(function(three)
+// {
+//         console.log("Error: " + three);
+
+// }).finally(function()
+// {
+//     console.log("Finally Promise is run");
+// })
+
+
+
+
+
+// let a = new Array();
+// let Promise5 = new Promise(function(resolve,reject)
+// {   
+//         setTimeout(function()
+//         {
+//             console.log("Promise-5 calling");
+//             let error = true;
+//             // let error = false;
+
+//             if(error)
+//              {
+//                 resolve( 
+//                            a  = ["bhagvan","shree","krishna"]
+//                        )
+//              }
+//              else
+//              {
+//                 reject("Error : something went wrong reject is called")
+//              }
+//         },2000)        
+
+// });
+// async function consume4()
+// {
+//     try
+//     {
+//         let P5 = await Promise5;
+//         console.log(P5);
+//         console.log(P5[0]);
+//         console.log(P5[1]);
+//         console.log(P5[2]);
+//         console.log("try is called");
+//     }
+//     catch(error)
+//     {
+//         console.log(error);
+//         console.log("catch is called");
+//     }
+// }
+// consume4();
+
+
+
+
+
+// let array13 = new Array();
+// let Promise6 = new Promise(function(resolve,reject)
+// {
+//         setTimeout(function()
+//         {
+//             console.log("Promise-6 is calling");
+//             let error = false;
+//             if(error)
+//             {
+//                resolve(
+//                           array13 = ["RameshChandra-Babu","Naydu","shivajii",1,2,3]
+//                       );                
+//             }
+//             else
+//             {
+//                reject("Error: Something Went Wrong & reject is called");
+//             }
+        
+//         },2000)
+
+// }).then(function(result)
+// {
+//     console.log(".then called result = " + result);
+//     console.log("result[0] = " + result[0]);
+//     return result;
+
+// }).catch(function(result)
+// {
+//     console.log("catch = " + result);
+
+// }).finally(function()
+// {
+//     console.log("Finally is called");
+// })
+// console.log("P-6 = " + Promise6);
+
+
+
+
+
+// let Array10 = new Array();
+// let Promise7 = new Promise(function(resolve,reject){
+//     setTimeout(function(){
+//         console.log("Promise-7 is called");
+//         let error = false;
+//         if(error)        
+//         {
+//             resolve(
+//                       Array10 = ["Le-Tane","Nathi","Khabar",10,21,22],
+                      
+//                       function four()
+//                       {
+//                         console.log("four is called");
+//                       }
+//                    )
+//         }
+//         else
+//         {
+//            reject("Error: something went wrong reject is called");
+//         }
+//     },2000)
+// })
+
+// async function promise6()
+// {
+//     try
+//     {
+//         let p7 = await Promise7;
+//         console.log("try is called and P7 = " + p7);
+//         console.log("Array10 = " + Array10);
+//         console.log("function four() = " + four);
+//     }
+//     catch(error)
+//     {
+//         console.log("catch is called : " + error);
+//     }
+//     finally
+//     {
+//         console.log("finally is called task is complite");
+//     }    
+// }
+// promise6();
+
+
+
+
+// let Promise8 = new Promise(function(resolve,reject)
+// {
+//     setTimeout(function()
+//     {
+//         console.log("Promise-8 is called");        
+        
+//          let error = true;
+        
+//         if(error)
+//          {
+//             resolve(
+//                         {
+//                             username: "Mohan",
+//                             password: "mohanlal5440",
+//                             location: "ahmdabad"
+//                         }
+//                    );  
+//          }
+
+//          else
+//          {
+//             reject("Error: reject is called and somthing went wrong");
+//          }
+
+//     },2000)
+
+// });
+
+
+// async function promise8()
+// {
+//     try
+//     {
+//         let p8 = await Promise8;
+//         console.log(p8);
+//         console.log("p8.username = " + p8.username);
+//         console.log("p8.password = " + p8.password);
+//         console.log("p8.location = " + p8.location);
+//     }
+//     catch(error)
+//     {
+//         console.log(error);
+//     }    
+// }
+
+// promise8();
+
+
+
+let promise9 = new Promise(function(resolve,reject)
+{
+
+        setTimeout(function()
+        {
+            console.log("Promise-9 called");
+            let error = true;
+            if(error)
+            {
+                resolve(
+                             function one()
+                             {
+                                console.log("five is called");
+                                return one;
+                             }
+                       )
+            }
+            else
+            {
+                reject("Error: something went wrong & reject is called");
+            }
+
+        },2000)
+
+})
+
+async function consume10(one)
+{
+       try
+       {
+           let p9 = await promise9;
+           console.log(p9);
+           console.log(one); 
+       }
+       catch(error)
+       {
+           console.log(error);
+       }
+}
+consume10();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </script>
+</html>

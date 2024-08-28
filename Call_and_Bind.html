@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CallandBind</title>
+</head>
+<body bgcolor="black" text="white">
+  <h2>Call and Bind with javascript</h2>
+</body>
+ <script>
+    
+    // 1
+    // function setUsername(username)
+    // {
+    //    this.Usernameone = username;
+    //    console.log("Calling");
+    // }    
+    // function createUsername(username,email,password)
+    // {   
+    //     setUsername.call(this,username);
+    //     this.emailone = email;
+    //     this.passwordone = password;
+    // }
+    // let chai = new createUsername("chai","Chaior@Code","12345");
+    // console.log(chai);
+
+
+    // 2
+    // function setUsername1(username)
+    // {
+    //    this.usernameone = username; 
+    //    console.log("setUsername1 is called");
+    // }
+    // function createUsername1(username,email,password)
+    // {
+    //     setUsername1.call(this,username);
+    //     this.emailone = email;
+    //     this.passwordone = password;
+    // }
+    // let two = new createUsername1("rahul","rahul@gmail.com","rahul123");
+    // console.log(two);
+
+
+    // 3
+    // function setUser2(username,email,password)
+    // {
+    //     this.usernameone = username;
+    //     this.emailone = email;
+    //     this.passwordone = password;
+    //     console.log("setUser-2 is called");
+    //     console.log(this.usernameone);
+    //     console.log(this.emailone);
+    //     console.log(this.passwordone);
+    //     return void(0);
+    // }
+    // function createUser2(username,email,password)
+    // {
+    //     setUser2.call(this,username,email,password);        
+    // }    
+    // let three = new createUser2("Sitaraman","Sitaraman@gmail.com","123456");
+    // console.log(three);
+
+
+    // 4
+    // function setUser3(password)
+    // {
+    //   this.passwordone = password;
+    // }
+    // function createUser3(username,password,email)
+    // {
+    //     this.usernameone = username;
+    //     this.emailone = email;
+    //     setUser3.call(this,password);
+    // }
+    // let Four = new createUser3("shima","shima@123","shima@gmail.com");
+    // console.log(Four);
+
+
+    // 5 
+    // function setUser4(salary)
+    // {
+    //    this.salaryone = salary;
+    // }
+    // function setUser5(date)
+    // {
+    //    this.dateone = date;
+    // }
+    // function createUser4(firstname,lastname,salary,date)
+    // {
+    //     this.firstnameone = firstname;
+    //     this.lastnameone = lastname;
+    //     setUser4.call(this,salary);       
+    //     setUser5.call(this,date);
+    // }
+    // let Five = new createUser4("rahul","joshi",10200,"09/01/1994");
+    // console.log(Five);
+
+    // Object.prototype.Stringcount = function(one)
+    // {
+    //     console.log(`\nString: ${this},\n\n AllcountStrings: ${this.length}`);
+    // }
+    // createUser4.Stringcount();
+
+
+
+    // 6 
+    // function setuser6(empid)
+    // {
+    //    this.empidone = empid;
+    // }
+    // function createUser6(empid,empsal,region)
+    // {
+    //     setuser6.call(this,empid);
+    //     this.empsalone = empsal;
+    //     this.regionone = region;
+    // }
+    // let six = new createUser6(10,10220,"Jamnagar");
+    // console.log(six);
+
+    
+    // 7 
+    // function setUser7(username)
+    // {
+    //    this.userone = username;
+    // }
+    // function createUser7(username,password,email)
+    // {
+    //     setUser7.call(this,username);
+    //     this.passwordone = password;
+    //     this.emailone = email;
+    // }
+    // let seven = new createUser7("jivaraj","jivraj@123","123456");
+    // console.log(seven);
+
+
+
+    // 8
+    // function setUser8(username)
+    // {
+    //    this.usernameone = username;
+    // }
+    // function createUser8(username,password,email)
+    // {
+    //    setUser8.call(this,username);
+    //    this.passwordone = password;
+    //    this.emailone = email;
+    // }
+    // let eight = new createUser8("vishal","vishu@123","vishal@gmail.com")
+    // console.log(eight);
+
+
+    // 9
+    // function setUser9(username,password,email)
+    // {
+    //     this.usernameone = username;
+    //     this.passwordone = password;
+    //     this.emailone = email;
+    // }
+    // function createUser9(username,password,email)
+    // {
+    //    setUser9.call(this,username,password,email);       
+    // }
+    // let nine = new createUser9("sanjay","sanju123","sanju@gmail.com");
+    // console.log(nine);
+
+    // 10
+    // function setUser10(firstname,lastname,salary)
+    // {
+    //     this.firstnameone = firstname;
+    //     this.lastnameone = lastname;
+    //     this.salaryone = salary;
+    // }
+    // function createUser10(firstname,lastname,salary)
+    // {
+    //   setUser10.call(this,firstname,lastname,salary);
+    // }
+    // let ten = new createUser10("Tarun","Silva",10300);
+    // console.log(ten);
+
+
+    // 11
+    // function setUser11(username,password,salary,email)
+    // {
+    //    this.usernameone = username;
+    //    this.passwordone = password;
+    //    this.salaryone = salary;
+    //    this.emailone = email;
+
+    // }
+    // function createUser11(username,password,salary,email)
+    // {
+    //   setUser11.call(this,username,password,salary,email);
+    // }
+    // let eleven = new createUser11("Grishva","Grishva123",10200,"Grishva@gmail.com");
+    // console.log(eleven);
+
+    // 12
+    // function setUser12(firstname,lastname,salary,hiredate)
+    // {
+    //    this.firstnameone = firstname;
+    //    this.lastnameone  = lastname;
+    //    this.salaryone    = salary;
+    //    this.hiredateone  = hiredate;
+    // }
+    // function createUser12(firstname,lastname,salary,hiredate)
+    // {
+    //    setUser12.call(this,firstname,lastname,salary,hiredate);       
+    // }
+    // let twelve = new createUser12("Divayesh","Rajani",12322,"10/01/1993");
+    // console.log(twelve);
+
+
+    // 13
+    function setUser13(username)
+    {
+       this.usernameone = username;
+    }
+    function createUser13(username,password,hiredate,salary)
+    {
+      setUser13.call(this,username);
+      this.passwordone = password;
+      this.hiredateone = hiredate;
+      this.salaryone = salary;
+    }
+    let threeteen = new createUser13("Yagnik","Yagu@123","12/08/2013","12/02/2010");
+    console.log(threeteen);
+
+    
+ </script>
+</html>

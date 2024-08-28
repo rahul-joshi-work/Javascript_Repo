@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+  <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+  </style>
+<body>
+  <h2>Promise</h2>
+</body>
+ <script>
+
+//===================================================================================================    
+
+  //Promise means : Either complete or notcomplete.
+  //Promise is also connected with this arguments resolve and reject.
+  //Resolve means : it means solve and connect with dotthen() method.
+  //Rejcet means : it means notsolve and connect with dotcatch() method.
+
+  
+  // simple variables with promise and its defination.
+
+  // let Promiseone = new Promise(function(resolve,reject){
+
+  //     setTimeout(function(){
+  //         console.log("Promise one is calling");
+  //         resolve();
+  //     },2000);
+
+  // });  
+  // Promiseone.then(function(){
+  //   console.log("Promiseone then is calling");  
+  // });
+
+  // let Promisetwo = new Promise(function(resolve,reject){
+  //     setTimeout(function(){
+  //       console.log("Promise two is calling");
+  //       resolve();
+  //     });      
+  // });  
+  // Promisetwo.then(function(){
+  //   console.log("Promise two .then is calling");
+  // });
+
+ 
+  // let Promisethree = new Promise(function(resolve,reject){
+    
+  //         setTimeout(function(){
+  //             console.log("Promise three calling");
+  //             resolve();
+  //         },1000);    
+  // });
+  // Promisethree.then(function(){
+  //    console.log("P-3 then calling");
+  // });
+
+  
+  // let Promisefour = new Promise(function(resolve,reject){
+  //     setTimeout(function(){
+  //         console.log("Promisefour calling");
+  //         resolve();
+  //     },2000);
+  // });
+  // Promisefour.then(function(){
+  //    console.log("Promisefour thencalling");
+  // });
+
+
+  //  let Promisefive = new Promise(function(resolve,reject){
+  //       setTimeout(function(){
+  //           console.log("Promisefive is calling");
+  //           resolve();
+  //       });
+  //  });
+  //  Promisefive.then(function(){
+  //     console.log("Promisefive then calling");
+  //  });
+
+  // let Promisesix = new Promise(function(resolve,reject){
+  //     setTimeout(function(){
+  //         console.log("PromiseSix calling");
+  //         resolve();
+  //     });
+  // });
+  // Promisesix.then(function(){
+  //     console.log("PromiseSix then calling");
+  // });
+
+
+  // let PromiseSeven = new Promise(function(resolve,reject){
+  //     setTimeout(function(){
+  //         console.log("PromiseSeven calling");
+  //         resolve();
+  //     },1000);
+  // });
+  // PromiseSeven.then(function(){
+  //    console.log("PromiseSeven then calling");
+  // });
+
+  // let PromiseEight = new Promise(function(resolve,reject){
+  //     setTimeout(function(){
+  //         console.log("PromiseEight is calling");
+  //         resolve();
+  //     });      
+  // });
+  // PromiseEight.then(function(){
+  //   console.log("PromiseEight then calling");
+  // });
+
+
+  // let PromiseNine = new Promise(function(resolve,reject){
+  //       setTimeout(function(){
+  //         console.log("PromiseNine is calling");
+  //         resolve();
+  //       });        
+  // });
+  // PromiseNine.then(function(){
+  //   console.log("P-9 then calling");
+  // });
+
+
+  // let PromiseTen = new Promise(function(resolve,reject){
+  //      setTimeout(function(){
+  //         console.log("PromiseTen calling");
+  //         resolve();
+  //      });
+  // });
+  // PromiseTen.then(function(){
+  //   console.log("Promiseten then calling");
+  // });
+
+  // let PromiseTen = new Promise(function(resolve,reject){
+  //     setTimeout(function(){
+  //         console.log("PromiseTen calling");
+  //         resolve();
+  //     },1000);
+  // });
+  // PromiseTen.then(function(){
+  //   console.log("P-10 then calling");
+  // });
+
+//=========================================================================================================
+
+//without variable create promise.
+
+
+// new Promise(function(resolve,reject){
+//       setTimeout(function(){
+//           console.log("WV P - 1 calling");
+//           resolve();
+//       },1000);  
+// }).then(function(){
+//     console.log("WV Promise then() calling");
+// });
+
+
+
+// new Promise(function(resolve,reject){
+//       setTimeout(function(){
+//           console.log("WV P - 2 calling");
+//           resolve();
+//       },1000);
+// }).then(function(){
+//   console.log("WV Promise then() calling");
+// });
+
+
+
+// new Promise(function(resolve,reject){
+//     setTimeout(function(){
+//        console.log("WV P - 3 calling");
+//        resolve();
+//     },2000);  
+// }).then(function(){
+//     console.log("WV Promise then() calling");
+// });
+
+
+
+    // new Promise(function(resolve,reject){
+    //     setTimeout(function(){
+    //         console.log("WV P - 4 calling");
+    //         resolve();
+    //     },2000)
+    // }).then(function(){
+    //     console.log("WV Promise then() calling");
+    // });
+
+    
+    // let withvariable = new Promise(function(resolve,reject){
+    //     setTimeout(function(){
+    //       console.log("withvariable Promise calling");
+    //       resolve();
+    //     },1000);
+    // }).then(function(){
+    //     console.log("with V - then() is calling");
+    // });
+
+
+
+    // new Promise(function(resolve,reject){
+    //     setTimeout(function(){
+    //         console.log("WV P - 5 calling");
+    //         resolve();
+    //     },2000);
+    // }).then(function(){
+    //     console.log("WV P then() calling");
+    // });
+
+
+    // new Promise(function(resolve,reject){
+    //      setTimeout(function(){
+    //           console.log("WV P - 6 calling");
+    //           resolve();
+    //      },2000);
+    // }).then(function(){
+    //      console.log("WV P then() calling");
+    // });
+
+
+    // new Promise(function(resolve,reject){
+    //     setTimeout(function(){
+    //       console.log("WV P - 7 calling");
+    //       resolve();
+    //     })
+    // }).then(function(){
+    //     console.log("WV P then() calling");
+    // });
+    
+
+    // new Promise(function(resolve,reject){
+    //     setTimeout(function(){
+    //       console.log("WV P - 8 calling");
+    //       resolve();
+    //     })
+    // }).then(function(){
+    //     console.log("WV P then() calling");
+    // });
+
+
+    // new Promise(function(resolve,reject){
+    //     setTimeout(function(){
+    //         console.log("WV P - 9 is calling");
+    //         resolve();
+    //     },2000);
+    // }).then(function(){
+    //       console.log("WV P - then() calling");
+    // });
+
+
+    // new Promise(function(resolve,reject){
+    //       setTimeout(function(){
+    //           console.log("WV P - 10 calling");
+    //           resolve();
+    //       },2000);
+    // }).then(function(){
+    //      console.log("WV P - then() calling");
+    // });
+// ===========================================================================================
+
+        
+        // Promise with send the values in resolve({}) functions, arrays, object.
+        // Promise with object inside resolve({objects}).
+
+        // let PromiseA1 = new Promise(function(resolve,reject){
+        //     setTimeout(function()
+        //     {
+        //         console.log("PromiseA1 calling");
+        //         resolve( {
+        //                     user: "Rahul", 
+        //                     Password: "Sangita$1234", 
+        //                     Location: "Junagadh"
+        //                  });
+        //     },2000)
+        // }).then(function(user)
+        //    {
+        //       console.log("then calling");
+        //       console.log(user);
+        //    });
+
+
+
+      // let PromiseA2 = new Promise(function(resolve,reject){
+      //       setTimeout(function()
+      //       {
+      //           console.log("PromiseA2 is calling");                
+      //           resolve({
+      //                     Location_1: "Junagadh", 
+      //                     Location_2: "Amreli",
+      //                     Location_3: "Manavadar",
+      //                     Location_4: "Umrala"
+      //                   });
+      //       },2000);
+      // }).then(function(Locations)
+      //   {
+      //       console.log("PromiseA2 then() is calling");
+      //       console.log(Locations);
+      //       console.log("Location1 = " + Locations.Location_1);
+      //   })
+
+
+
+      // let PromiseA3 = new Promise(function(resolve,reject){
+      //       setTimeout(function(){
+      //          console.log("PromiseA3 is fire");
+      //          resolve(
+      //             {
+      //               Name1: "Rahul",
+      //               Name2: "Shivashtav",
+      //               Name3: "Triranga",
+      //               Name4: "GangaBai"
+      //             }
+      //          );
+      //       },2000)
+      // }).then(function(Names){
+      //       console.log("PromiseA3 then() calling");
+      //       console.log(Names);
+      //       console.log(Names.Name2);
+      // });
+
+
+
+      // let PromiseA4 = new Promise(function(resolve,reject){
+      //     setTimeout(function(){
+      //         console.log("PromiseA4 is calling");
+      //         resolve(
+      //                   {
+      //                     Society1: "Shantanu",
+      //                     Society2: "Madhuram",
+      //                     Society3: "Yamuna",
+      //                     Society4: "Valbha"
+      //                   }
+      //                );              
+      //     });
+      // }).then(function(Society){
+      //       console.log("PromiseA4 then() is calling");
+      //       console.log(Society);
+      //       console.log(Society.Society2);
+      // })
+
+
+      // let PromiseA5 = new Promise(function(resolve,reject){
+
+      //       setTimeout(function(){
+      //           console.log("PromiseA5 is calling");                  
+      //           resolve(
+      //                     {
+      //                           Snak1: "sev-mamraa",
+      //                           Snak2: "Bhungla-Batata",
+      //                           Snak3: "sing-bhajiya",
+      //                           Snak4: "gundi-gathiya"
+      //                     }
+      //                  );
+      //       });
+
+      // }).then(function(Snaks){
+      //       console.log("PromiseA5 then() calling");
+      //       console.log(Snaks);
+      //       console.log(Snaks.Snak2);
+      // })
+
+//===================================================================================================
+
+ // Promise with functions inside resolve(function(){}).
+
+
+//  let PromiseB1 = new Promise(function(resolve,reject){
+//       setTimeout(function(){
+//         console.log("PromiseB1 is calling");
+//         resolve(
+//                     function one(A,B)
+//                     {
+//                       console.log("Inside resolve function calling");
+//                       let C = (A+B)
+//                       console.log("C = " + C)
+//                       return one;
+//                     }                    
+//                );
+//       },2000);    
+//  }).then(function(one){
+//       console.log("PromiseB1 then() calling");
+//       console.log("function_1 = " + one(10,10));
+//  });
+
+
+
+// let PromiseB2 = new Promise(function(resolve,reject){
+//       setTimeout(function(){
+//           console.log("PromiseB2 is calling");
+//           resolve(
+//                       function two()
+//                       {
+//                         console.log("Resolve two() is calling");
+//                         return two;
+          
+//                       }             
+//                  );
+//       },2000);
+// }).then(function(two){
+//     console.log("PromiseB2 then calling");
+//     console.log("two = " + two);
+// })
+
+
+// new Promise(function(resolve,reject){
+//     setTimeout(function(){
+//         console.log("PromiseB3 is calling");
+//         resolve(
+//                     function three(A,B)
+//                     {
+//                        console.log("resolve Two is calling");
+//                        console.log("A*B = " + A*B);
+//                     }            
+//               );
+//     },2000);
+// }).then(function(three){
+//    console.log("PromiseB3 then() calling");
+//    console.log("Three = " + three);
+// });
+
+
+
+// new Promise(function(resolve,reject){
+//       setTimeout(function(){
+//         console.log("PromiseB4 is calling");
+//         resolve(
+//                     function four()
+//                     {
+//                         console.log("resolve four() calling");
+//                     }
+//                );
+//       },2000)
+// }).then(function(four)
+// {
+//       console.log("PromiseB4 then() calling");
+//       console.log("Four = " + four);
+// })
+
+
+// let a;
+// new Promise(function(resolve,reject){
+//       setTimeout(function(){
+//             console.log("PromiseB5 is calling");
+//             resolve(
+//                         a = function five()
+//                         {
+//                           console.log("resolve Five is calling");
+//                           return a;
+//                         }
+//                    );
+//       },2000);
+// }).then(function(five){
+//       console.log("PromiseB5 then() calling");
+//       console.log("Five() = " + five);
+//       console.log(a);
+// })
+
+//=====================================================================================================
+
+
+
+//Promise with array
+
+// let Array1;
+// let Arraywithpomise1 = new Promise(function(resolve,reject){
+//       setTimeout(function(){
+//           console.log("Promise with Array");
+//           resolve(
+//                     Array1 = ["Rahul","Joshi","is","great","person"],
+//                     function only()
+//                     {
+//                       console.log("only one is calling");
+//                       return only;
+//                     },           
+//                     obj = {
+//                       A: "a",
+//                       B: "b",
+//                       C: "c"
+//                     }
+//                  );
+//       },2000);
+// }).then(function(Array1,only,obj){
+//     console.log("Arraywithpromise then() calling");
+//     console.log(Array1);
+//     console.log("Array1[1] = " + Array1[1]);
+//     console.log("only = " + only);
+//     console.log("obj = " + obj);    
+// })
+
+
+// let Array2;
+// let ArraywithPromise2 = new Promise(function(resolve,reject){
+//     setTimeout(function(){
+//       console.log("ArraywithPromise3");
+//       resolve(
+//                 Array2 = ["Brahma","Vishnu","Mahesh"]       
+//              );
+//     },2000);
+// }).then(function(){
+//       console.log("ArraywithPromise2 is calling");
+//       console.log(Array2);
+//       console.log(Array2[1]);  
+// }) 
+
+
+// new Promise(function(resolve,reject){
+//       setTimeout(function(){
+//           console.log("ArraywithPromise3 is calling");
+//           resolve(
+//                       Array3 = [1,2,3,"Maheshwar","shivay"]
+//                 );
+//       },2000)
+// }).then(function(){
+//       console.log("ArraywithPromise3 then() calling");
+//       console.log(Array3);
+//       console.log(Array3[3]);
+// })
+
+
+// new Promise(function(resolve,reject){
+//     setTimeout(function(){
+//         console.log("ArraywithPromise4 is calling");
+//         resolve(
+//                   array4 = ["hiren","malam","shivaji",11]
+//                )
+//     },2000)
+// }).then(function(){
+//     console.log("ArraywithPromise4 then() calling");
+//     console.log(array4);
+//     console.log("array4[0] = " + array4[0]);
+// })
+
+
+
+// new Promise(function(resolve,reject){
+//     setTimeout(function(){
+//         console.log("ArraywithPromise5 is calling");
+//         resolve(
+//                   array5 = ["Shriman","narayan",10,22]
+//                );
+//     },2000)
+// }).then(function(){
+//     console.log("ArraywithPromise5 then() calling");
+//     console.log("array5 = " + array5);
+//     console.log("array5 = " + array5[0]);
+// })
+
+//==========================================================================================
+
+// New Promise methods with [.then(), .catch(), .finally() ]
+
+//  new Promise(function(resolve,reject)
+// {
+
+//      setTimeout(function(){
+//         console.log("NewPromise1 is called");
+//         let error = true;
+//         if(error)
+//         {
+//            resolve({
+//                      Username: "Tiger@work",
+//                      MobileNO: "+918460014690",
+//                      Location: "Junagadh"
+//                   });
+//         }
+//         else
+//         {
+//            reject("ERROR: Something went wrong");
+//         }
+
+//       },2000);
+// })
+// .then(function(users)
+// {
+//    console.log(".then() called");
+//    console.log("UsersInfo : " + Object.values(users));
+//    console.log("UserInfo(Location) : " + users.Location);
+//    return users;
+// }).catch(function(users)
+// {
+//    console.log(".catch() is called");
+//    console.log(users);
+//    return users;
+// }).finally(function(users)
+// {
+//    console.log(".finally() is called");
+//    console.log("Either resolve & reject");
+//    console.log(users);
+// })
+
+
+
+// new Promise(function(resolve,reject){
+//     setTimeout(function(){
+//       console.log("NewPromise2 is calling");
+//       let Error = true;
+//       if(Error)
+//       {
+//          resolve({
+//                     Username: "Tiger",
+//                     Address: "Abhi Zindahai",
+//                     Pincode: 340220, 
+//                     City: "Ahmdabad"
+//                 });
+//       }
+//       else
+//       {
+//          reject("Error : Something is wrong");
+//       }
+//     },2000)
+// }).then(function(userinfo)
+// {
+//     console.log(".then calling");
+//     console.log("userinfo : " + Object.values(userinfo));
+//     return userinfo;
+
+// }).catch(function(userinfo)
+// {
+//     console.log(".then calling");
+//     console.log(userinfo);
+
+// }).finally(function()
+// {
+//     console.log("Either resolve or reject");    
+// })
+
+
+
+
+// new Promise(function(resolve,reject){
+    
+//    setTimeout(function()
+//    {
+//        console.log("NewPromise3 is calling");
+//        let Error = true;
+//        if(Error)
+//        {
+//           resolve(
+//                     Array2 = ["Yagnik","Thakrar","gandu","Talalaa"],
+//                     // console.log(typeof(Array2))
+//                  );
+//        }
+//        else
+//        {
+//           reject("Error: Something went wrong");
+//        }
+
+//     },2000)
+
+// }).then(function(userInfo)
+// {
+//    console.log(".then is calling");
+//    console.log("userInfo : " + Array2[0]);
+//    return userInfo;
+ 
+// }).catch(function(userInfo)
+// {
+//   console.log(".catch is calling");   
+//   console.log(userInfo);
+
+// }).finally(function()
+// {
+//     console.log("Either resolve or reject");
+// })
+
+
+
+// let Array11 = new Array();
+// new Promise(function(resolve,reject)
+// {
+//     setTimeout(function()
+//     {        
+//       console.log("NewPromise4 is calling");
+        
+//         let error = false;
+        
+//         if(error)
+//         {
+//             resolve(
+//                       Array11[0] = "Convent_school",
+//                       Array11[1] = "Girnaar_school",
+//                       Array11[2] = "Cembrig_school"                   
+//                    );
+//         }
+        
+//         else
+//         {
+//             reject(
+//                      console.log("Error: reject is called and something went wrong")
+//                   );
+//         }
+
+//     },2000)
+
+// }).then(function(Array1)
+// {
+//   console.log(".then is calling");
+//   console.log("Array1 = " + Object.values(Array1));
+//   console.log("Array1[0] = " + Array1[0]);
+//   return Array1;  
+
+// }).catch(function(Array1)
+// {   
+//     console.log(".catch is calling");    
+
+// }).finally(function()
+// {
+//     console.log(".finally is calling");    
+// })
+
+
+
+// let Array12 = new Array();
+
+// let NewPromise5 = new Promise(function(resolve,reject){
+    
+//     setTimeout(function()
+//     {
+//      console.log("NewPromise5 is calling");
+//       let error =  false;
+//         if(error)
+//         {
+//             resolve(
+//                       Array12 = ["mare-hu","ne","tare-hu"]
+//                    );
+//         }
+//         else
+//         {
+//            reject("Error: reject is called Something went wrong");
+//         }
+
+//     },2000)
+
+// }).then(function(Array12)
+// {   
+//    console.log(".then calling Array12 = " + Array12);
+//    console.log("Array12[2] = " + Array12[2]);
+//    return Array12;
+
+// }).catch(function(erroe)
+// {      
+//    console.log(".catch is calling " + error);
+
+// }).finally(function(){
+//    console.log("finally calling");
+// })
+
+// console.log(NewPromise5);
+
+
+
+ </script> 
+</html>

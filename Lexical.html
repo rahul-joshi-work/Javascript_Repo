@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexical_Scope</title>
+</head>
+ <style>
+    body{
+      background-color: black;
+      color: white;
+    }
+ </style>
+<body>
+    <h2>Lexical_Scope</h2>
+    <button id='orange'>orange</button>
+    <button id='green'>Green</button>
+    <p id="text"></p>
+</body>
+  <script>
+    
+    // 1 
+    // function init()
+    // {
+    //   console.log("init-called");
+        
+    //     function DisplayName()
+    //     {
+    //        console.log("displayname called");
+    //     }
+    //     return DisplayName();
+    // }
+    // init();
+
+
+
+    // 2
+    // function outer1()
+    // {
+    //    let username = 'rahul';
+
+    //     function inner1()
+    //     {
+    //        console.log("inner = " + username);
+    //     }
+    //    return inner1();
+    // }
+    // outer1()    
+    
+    
+    // 3
+    // function outer2()
+    // {
+    //     let username1 = "vishvash";
+        
+    //     function inner2()
+    //     {
+    //        console.log("inner2 = " + username1);
+    //     }
+        
+    //     console.log("inner2 = " + username1);
+
+    //     return inner2();
+    // }
+    // outer2();
+    // console.log("inner2 = " + username1); // error: Uncaught ReferenceError: username1 is not defined.
+
+
+    
+    // 4
+    // function outer3()
+    // {
+    //     let username2 = "Jaikar";
+    //     function inner3()
+    //     {
+    //        console.log("inner3 = " + username2);
+    //        console.log("inner3 called");
+    //     }        
+    //     return inner3()        
+    // }
+    // outer3();
+
+
+    // 5
+    // function outer4()
+    // {
+    //     let username3 = "shivashtav";
+    //     console.log("outer-4 called");
+        
+    //     function inner4()
+    //     {
+    //        console.log("inner4 = " + username3);
+    //        console.log("inner-4 called");
+    //     }
+    //     return inner4();        
+    // }
+    // outer4();
+
+
+    
+    // 6
+    // function outer5()
+    // {
+    //     let username = "hirva";
+        
+    //     function inner()
+    //     {   
+    //        let secret = "my123"; 
+    //        console.log("inner1 = " + username);
+    //        console.log("secret = " + secret);
+
+    //        function innerTwo()
+    //        {
+    //           console.log("innerTwo = " + username);            
+    //        }
+
+    //        return innerTwo();
+    //     }
+    //     return inner();
+    // }
+    // outer5();
+
+
+    
+    // 7 
+    // function makefunction1()
+    // {      
+    //   let user3 = "AjdaayKaar";
+    //   console.log("user3 = " + user3);
+
+    //    function inside()
+    //    {
+    //      let user2 = "RahulJoshi";   
+    //      console.log("user1 = " + user2);
+
+    //       function insideone()
+    //       {
+    //         let user3 = "Mohini";
+    //         console.log("user2 = " + user3);
+    //         return 0;
+    //       }
+    //       return insideone();
+    //    }      
+    //   return inside();
+    // }
+    // let aa = makefunction1();
+    // console.log(aa);
+
+
+
+
+    // 8
+    // function makefun2()
+    // {
+    //   console.log("makefun2 is called");
+      
+    //   function insideone()
+    //   {
+    //     console.log("inside one is called");
+
+    //     function insidetwo()
+    //     {
+    //       console.log("inside two is called");
+          
+
+    //       function insidethree()
+    //       {
+    //         console.log("Inside-Three is called");
+    //         return 0
+    //       }
+    //       return insidethree();
+    //     }
+    //     return insidetwo();
+    //   }
+    //   return insideone();
+      
+    // }
+    // makefun2();
+
+
+
+    // 9
+    // function makefun3()
+    // {
+    //   console.log("makefun2 is called")
+    //   function insideone()
+    //   {
+    //      console.log("inside is calling");
+    //   }
+    //   return insideone();
+    // }
+    // makefun3();
+
+    // 4 
+    // function makefun4()
+    // {
+    //   console.log("make-fun4 is called");
+      
+    //   function insideone()
+    //   {
+    //     console.log("inside is called");
+
+    //     function insidethree()
+    //     {
+    //       console.log("inside-three is called");
+    //     }
+    //     return insidethree();
+    //   }
+    //     return insideone();
+    // }
+    // makefun4();
+
+
+    // 10 
+    // function makefun5()
+    // {
+    //   console.log("make-fun5 is called");
+    //   function insideone()
+    //   {
+    //     console.log("inside-one is called");
+    //     function insidetwo()
+    //     {
+    //       console.log("inside-two is called");
+    //     }
+    //     return insidetwo()
+    //   }
+    //   return insideone(); 
+    // }
+    // makefun5();
+
+
+    
+    // 11
+    // function makefun6()
+    // {
+    //   console.log("make-fun6 called");
+      
+    //   function insideone()
+    //   {
+    //     console.log("inside-one called");
+        
+    //     function insidetwo()
+    //     {
+    //       console.log("inside-two called");
+
+    //       function insidethree()
+    //       {
+    //         console.log("inside-three called");
+
+    //         function insidefour()
+    //         {
+    //           console.log("inside-four called");
+    //         }
+    //         return insidefour();
+    //       }
+    //       return insidethree();
+    //     }
+    //     return insidetwo();
+    //   }
+    //   return insideone();
+    // }
+    // makefun6();
+
+
+
+    
+    // 12
+    // function makefun7()
+    // {
+    //   console.log("make-fun7 called")
+        
+    //     function insideone()
+    //     {
+    //        console.log("inside-one called");
+
+    //        function insidetwo()
+    //        {
+    //           console.log("inside-two called");
+
+    //           function insidethree()
+    //           {
+    //             console.log("inside-three called");
+
+    //             function insidefour()
+    //             {
+    //               console.log("inside-four is called");
+
+    //               function insidefive()
+    //               {
+    //                 console.log("inside-five called");
+    //               }
+    //               return insidefive();
+    //             }
+    //             return insidefour();
+    //           }
+    //           return insidethree();
+    //        }
+    //        return insidetwo();
+    //     }
+    //     return insideone();
+    // }
+    // makefun7();
+
+
+
+
+    // 13
+    // function makefun8()
+    // {
+    //   console.log("make-fun-8 called");
+    //   function insideone()
+    //   {
+    //     console.log("inside-one called");
+    //   }
+    //   return insideone();
+    // }
+    // makefun8();
+
+
+
+    // 14
+    //  function makefun9()
+    //  {
+    //   console.log("make-fun-9 called");
+    //     function insideone()
+    //     {
+    //         console.log("inside-one called");
+    //     }
+    //     return insideone();
+    //  }
+    //  makefun9();
+
+
+    
+    // 15
+    // function makefun10()
+    // {
+    //   console.log("make-fun-10 called");
+    //   function insideone()
+    //   {
+    //     console.log("inside-one is called");
+    //   }
+    //   return insideone();
+    // }
+    // makefun10();
+
+
+
+
+
+  </script>
+  
+  <script>
+   
+   
+   
+   function clicks(color)
+   {
+      return function()
+      {
+          document.body.style.backgroundColor = `${color}`;
+          console.log("clicked");
+      }
+   }
+   document.getElementById("orange").onclick = clicks("orange");
+   document.getElementById("green").onclick = clicks("green");  
+
+  </script>
+</html>
